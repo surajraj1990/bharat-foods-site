@@ -1,0 +1,488 @@
+/* ===================================================
+   BHARAT OILS — Contact & Store Locator Styles
+   =================================================== */
+
+/* --- Buy Channels Grid --- */
+
+.buy-channels-section {
+  background: var(--color-white);
+}
+
+.buy-channels-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-6);
+  margin-bottom: var(--space-16);
+}
+
+@media (max-width: 1024px) { .buy-channels-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 640px)  { .buy-channels-grid { grid-template-columns: 1fr; } }
+
+.channel-card {
+  border-radius: var(--radius-xl);
+  padding: var(--space-8) var(--space-6);
+  text-align: center;
+  border: 2px solid transparent;
+  transition: all var(--transition-base);
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.channel-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+
+.channel-card--amazon  { background: #FFF8EF; border-color: #FF9900; }
+.channel-card--flipkart{ background: #EFF5FF; border-color: #2874F0; }
+.channel-card--whatsapp{ background: #EFFFF5; border-color: #25D366; }
+.channel-card--offline { background: var(--color-gold-faint); border-color: var(--color-gold); }
+
+.channel-card__icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.75rem;
+}
+
+.channel-card--amazon   .channel-card__icon { background: #FF9900; }
+.channel-card--flipkart .channel-card__icon { background: #2874F0; }
+.channel-card--whatsapp .channel-card__icon { background: #25D366; }
+.channel-card--offline  .channel-card__icon { background: var(--color-gold); }
+
+.channel-card__title {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  color: var(--color-green-deep);
+}
+
+.channel-card__desc {
+  font-size: var(--text-sm);
+  color: var(--color-muted);
+  line-height: 1.6;
+}
+
+.channel-card__action {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--text-sm);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-top: auto;
+}
+
+.channel-card--amazon   .channel-card__action { color: #FF9900; }
+.channel-card--flipkart .channel-card__action { color: #2874F0; }
+.channel-card--whatsapp .channel-card__action { color: #25D366; }
+.channel-card--offline  .channel-card__action { color: var(--color-gold); }
+
+/* --- Distributor Form --- */
+
+.enquiry-section {
+  background: var(--color-cream);
+}
+
+.enquiry-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-16);
+  align-items: start;
+}
+
+@media (max-width: 900px) { .enquiry-grid { grid-template-columns: 1fr; } }
+
+.contact-form {
+  background: var(--color-white);
+  border-radius: var(--radius-xl);
+  padding: var(--space-10);
+  box-shadow: var(--shadow-md);
+}
+
+.form-group {
+  margin-bottom: var(--space-5);
+}
+
+.form-label {
+  display: block;
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-charcoal);
+  margin-bottom: var(--space-2);
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+  width: 100%;
+  padding: var(--space-3) var(--space-4);
+  border: 1.5px solid var(--color-divider);
+  border-radius: var(--radius-md);
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  color: var(--color-charcoal);
+  background: var(--color-cream);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+  outline: none;
+}
+
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+  border-color: var(--color-gold);
+  box-shadow: 0 0 0 3px rgba(201,168,76,0.15);
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.form-note {
+  font-size: var(--text-xs);
+  color: var(--color-muted);
+  margin-top: var(--space-2);
+}
+
+/* --- Store Locator --- */
+
+.locator-section {
+  background: var(--color-white);
+}
+
+.map-embed {
+  width: 100%;
+  height: 420px;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  background: var(--color-cream-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: var(--space-10);
+  position: relative;
+}
+
+.map-embed iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.map-placeholder {
+  text-align: center;
+  color: var(--color-muted);
+}
+
+.map-placeholder p {
+  font-size: var(--text-sm);
+  margin-top: var(--space-3);
+}
+
+/* --- Contact Info --- */
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.contact-info-item {
+  display: flex;
+  gap: var(--space-4);
+  align-items: flex-start;
+}
+
+.contact-info-item__icon {
+  width: 44px;
+  height: 44px;
+  background: var(--color-gold-faint);
+  border: 1px solid var(--color-gold-light);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.contact-info-item__label {
+  font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+  margin-bottom: var(--space-1);
+}
+
+.contact-info-item__value {
+  font-size: var(--text-base);
+  color: var(--color-charcoal);
+  font-weight: 500;
+}
+
+.contact-info-item__value a {
+  color: var(--color-green-mid);
+  transition: color var(--transition-fast);
+}
+
+.contact-info-item__value a:hover { color: var(--color-gold); }
+
+/* ===================================================
+   CONTACT PAGE — Updated UAE styles
+   =================================================== */
+
+/* Channel section */
+.channel-section {
+  background: var(--color-white);
+}
+
+.channel-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-6);
+}
+
+@media (max-width: 768px) {
+  .channel-grid { grid-template-columns: 1fr; }
+}
+
+/* New channel card layout (horizontal) */
+.channel-card {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: start;
+  gap: var(--space-4);
+  padding: var(--space-6);
+  text-decoration: none;
+  border: 2px solid var(--color-divider);
+  border-radius: var(--radius-xl);
+  background: var(--color-white);
+  transition: all var(--transition-base);
+  position: relative;
+}
+
+.channel-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
+.channel-card--inactive { cursor: default; opacity: 0.75; }
+.channel-card--inactive:hover { transform: none; box-shadow: none; }
+
+.channel-card--amazon  { border-color: #FF9900; }
+.channel-card--whatsapp{ border-color: #25D366; }
+.channel-card--noon    { border-color: var(--color-divider); }
+.channel-card--talabat { border-color: var(--color-divider); }
+
+.channel-card__icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+.channel-card__body {
+  flex: 1;
+}
+
+.channel-card__name {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  color: var(--color-navy);
+  margin-bottom: var(--space-1);
+}
+
+.channel-card__desc {
+  font-size: var(--text-sm);
+  color: var(--color-muted);
+  line-height: 1.6;
+  margin-bottom: var(--space-3);
+}
+
+.channel-card__cta {
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--color-saffron);
+}
+
+.channel-card--amazon  .channel-card__cta { color: #FF9900; }
+.channel-card--whatsapp .channel-card__cta { color: #25D366; }
+.channel-card__cta--muted { color: var(--color-muted); }
+
+.channel-card__status {
+  font-size: var(--text-xs);
+  font-weight: 700;
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-pill);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+
+.channel-card__status--live { background: var(--color-green-light); color: var(--color-green); }
+.channel-card__status--soon { background: var(--color-cream-dark); color: var(--color-muted); }
+
+/* Contact 2-column layout */
+.contact-two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-16);
+  align-items: start;
+}
+
+@media (max-width: 768px) {
+  .contact-two-col { grid-template-columns: 1fr; }
+}
+
+.contact-info-cards {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.contact-info-card {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-4);
+  background: var(--color-white);
+  border: 1px solid var(--color-divider);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5) var(--space-6);
+}
+
+.contact-info-card__icon {
+  font-size: 1.75rem;
+  flex-shrink: 0;
+}
+
+.contact-info-card strong {
+  display: block;
+  font-size: var(--text-sm);
+  color: var(--color-navy);
+  margin-bottom: var(--space-1);
+}
+
+.contact-info-card p {
+  font-size: var(--text-base);
+  margin: 0 0 var(--space-1);
+}
+
+.contact-info-card p a {
+  color: var(--color-saffron);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.contact-info-card small {
+  font-size: var(--text-xs);
+  color: var(--color-muted);
+}
+
+/* Map placeholder */
+.map-placeholder {
+  background: var(--color-cream);
+  border: 2px dashed var(--color-divider);
+  border-radius: var(--radius-xl);
+  min-height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.map-placeholder__inner {
+  text-align: center;
+  color: var(--color-muted);
+  padding: var(--space-8);
+}
+
+.map-placeholder__inner p {
+  font-weight: 600;
+  margin: var(--space-3) 0 var(--space-2);
+  color: var(--color-navy);
+}
+
+.map-placeholder__inner small {
+  font-size: var(--text-xs);
+}
+
+/* Enquiry form styles */
+.enquiry-section {
+  background: var(--color-navy);
+}
+
+.enquiry-section .section-header h2 { color: var(--color-white); }
+.enquiry-section .section-header p { color: rgba(255,255,255,0.7); }
+.enquiry-section .section-label { color: var(--color-gold); }
+
+.enquiry-form {
+  background: var(--color-white);
+  border-radius: var(--radius-xl);
+  padding: var(--space-10);
+  box-shadow: var(--shadow-lg);
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-5);
+}
+
+@media (max-width: 640px) {
+  .form-row { grid-template-columns: 1fr; }
+}
+
+.form-group {
+  margin-bottom: var(--space-5);
+}
+
+.form-label {
+  display: block;
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-charcoal);
+  margin-bottom: var(--space-2);
+}
+
+.form-control {
+  width: 100%;
+  padding: var(--space-3) var(--space-4);
+  border: 1.5px solid var(--color-divider);
+  border-radius: var(--radius-md);
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  color: var(--color-charcoal);
+  background: var(--color-cream);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+  outline: none;
+}
+
+.form-control:focus {
+  border-color: var(--color-saffron);
+  box-shadow: 0 0 0 3px rgba(232,112,30,0.12);
+}
+
+.form-control--textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.form-checkboxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+.form-checkbox {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--text-sm);
+  color: var(--color-body);
+  cursor: pointer;
+}
+
+.form-checkbox input[type="checkbox"] {
+  accent-color: var(--color-saffron);
+  width: 16px;
+  height: 16px;
+}

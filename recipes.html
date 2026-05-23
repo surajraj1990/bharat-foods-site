@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipes — Bharat Oils | 18 Authentic Indian Recipes with Cold-Pressed Oils</title>
+  <meta name="description" content="18 authentic Indian recipes from the Bharat Oils kitchen — Punjabi, Bengali, Kerala, South Indian and Rajasthani dishes cooked with pure cold-pressed groundnut, sesame, mustard and coconut oil. From quick weeknight meals to festival feasts.">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Recipes — Bharat Oils",
+    "description": "18 authentic Indian recipes cooked with pure cold-pressed oils.",
+    "publisher": { "@type": "Organization", "name": "Bharat Oils" },
+    "numberOfItems": 18
+  }
+  </script>
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages/culinary.css">
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="site-nav" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="nav-logo" aria-label="Bharat Oils — Go For Natural">
+        <img src="Bharat - brand logo .png" alt="Bharat Oils — Go For Natural" class="nav-logo__img">
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="shop.html">Our Oils</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="recipes.html" class="active">Recipes</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="https://www.amazon.ae/s?k=bharat+oils" class="btn btn--primary btn--sm" target="_blank" rel="noopener noreferrer">Buy Now</a>
+      </div>
+      <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- PAGE HEADER -->
+    <header class="page-header" role="banner">
+      <div class="container">
+        <p class="section-label">From Our Kitchen</p>
+        <h1>18 Recipes with Bharat Oils</h1>
+        <p class="page-header__sub">Authentic Indian cooking that showcases the flavour and nutritional depth only pure cold-pressed oil can deliver — from everyday dals and quick stir-fries to slow-cooked festival feasts. Organised by oil, time, and dietary preference.</p>
+      </div>
+    </header>
+
+    <!-- MULTI-DIMENSIONAL FILTER BAR -->
+    <section class="section filter-section" aria-label="Filter recipes">
+      <div class="container">
+        <div class="filter-bar-multi">
+
+          <div class="filter-group">
+            <span class="filter-group__label">By Oil</span>
+            <div class="filter-group__buttons" role="group" aria-label="Filter by oil">
+              <button class="filter-btn active" onclick="setFilter('oil','all',this)" aria-pressed="true">All Oils</button>
+              <button class="filter-btn filter-btn--mustard" onclick="setFilter('oil','mustard',this)" aria-pressed="false">🌼 Mustard</button>
+              <button class="filter-btn filter-btn--groundnut" onclick="setFilter('oil','groundnut',this)" aria-pressed="false">🥜 Groundnut</button>
+              <button class="filter-btn filter-btn--sesame" onclick="setFilter('oil','sesame',this)" aria-pressed="false">✨ Sesame</button>
+              <button class="filter-btn filter-btn--coconut" onclick="setFilter('oil','coconut',this)" aria-pressed="false">🥥 Coconut</button>
+            </div>
+          </div>
+
+          <div class="filter-group">
+            <span class="filter-group__label">By Time</span>
+            <div class="filter-group__buttons" role="group" aria-label="Filter by cooking time">
+              <button class="filter-btn active" onclick="setFilter('time','all',this)" aria-pressed="true">Any Time</button>
+              <button class="filter-btn" onclick="setFilter('time','quick',this)" aria-pressed="false">⚡ Under 20 min</button>
+              <button class="filter-btn" onclick="setFilter('time','medium',this)" aria-pressed="false">🕐 Under 45 min</button>
+              <button class="filter-btn" onclick="setFilter('time','long',this)" aria-pressed="false">🍳 Slow Cook</button>
+            </div>
+          </div>
+
+          <div class="filter-group">
+            <span class="filter-group__label">Dietary</span>
+            <div class="filter-group__buttons" role="group" aria-label="Filter by dietary preference">
+              <button class="filter-btn active" onclick="setFilter('dietary','all',this)" aria-pressed="true">All</button>
+              <button class="filter-btn" onclick="setFilter('dietary','vegan',this)" aria-pressed="false">🌿 Vegan</button>
+              <button class="filter-btn" onclick="setFilter('dietary','vegetarian',this)" aria-pressed="false">🥦 Vegetarian</button>
+              <button class="filter-btn" onclick="setFilter('dietary','non-veg',this)" aria-pressed="false">🍗 Non-Veg</button>
+            </div>
+          </div>
+
+          <div class="filter-results">
+            Showing <span id="recipe-count">18</span> of 18 recipes
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED RECIPE -->
+    <section class="section" style="padding-top:0" aria-labelledby="featured-heading">
+      <div class="container">
+        <div class="featured-article">
+          <div class="featured-article__image" aria-hidden="true" style="background:linear-gradient(135deg,#FFF8E1,#FFE082);font-size:5rem;display:flex;align-items:center;justify-content:center;">🍲</div>
+          <div class="featured-article__body">
+            <div class="featured-label">⭐ Featured Recipe of the Month</div>
+            <h2 class="featured-article__title" id="featured-heading">Authentic Sarson Ka Saag with Cold-Pressed Mustard Oil</h2>
+            <p class="featured-article__excerpt">The distinctive pungency of unrefined mustard oil is what makes this Punjabi winter staple sing. We break down the chemistry behind why refined oil simply cannot replicate the authentic flavour — and give you the recipe used in traditional North Indian households for generations. Served with makki ki roti, white butter, and jaggery.</p>
+            <div class="featured-article__meta">
+              <span class="meta-tag"><span aria-hidden="true">⏱</span> 45 min</span>
+              <span class="meta-tag"><span aria-hidden="true">👥</span> Serves 4</span>
+              <span class="meta-tag"><span aria-hidden="true">🌼</span> Mustard Oil</span>
+              <span class="meta-tag"><span aria-hidden="true">🌿</span> Vegan</span>
+              <span class="meta-tag"><span aria-hidden="true">❄️</span> Winter</span>
+            </div>
+            <a href="#" class="btn btn--primary">View Full Recipe →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== RECIPE GRID — 18 RECIPES ===== -->
+    <section class="section" style="background:var(--color-cream)" aria-labelledby="recipes-heading">
+      <div class="container">
+        <h2 id="recipes-heading" class="sr-only">All Recipes</h2>
+
+        <div class="article-grid" id="recipe-grid">
+
+          <!-- 1. Tadka Dal -->
+          <article class="article-card reveal" data-oil="groundnut" data-time="quick" data-dietary="vegan">
+            <div class="article-card__image">
+              <div style="width:100%;height:100%;background:linear-gradient(135deg,#FFF8E1,#FFECB3);display:flex;align-items:center;justify-content:center;font-size:3.5rem">🍛</div>
+              <div class="article-card__meta">
+                <span class="badge badge--gold">Everyday</span>
+                <span class="badge badge--green">⏱ 20 min</span>
+              </div>
+            </div>
+            <div class="article-card__body">
+              <p class="article-card__tag">Groundnut Oil · Dal · Vegan</p>
+              <h3 class="article-card__title">Tadka Dal with Cold-Pressed Groundnut Oil</h3>
+              <p class="article-card__excerpt">The tarka is everything in a good dal. Cold-pressed groundnut oil's mild nuttiness amplifies cumin, mustard seeds, and curry leaves without competing with the lentil.</p>
+              <div class="article-card__footer">
+                <div class="recipe-tags">
+                  <span>👥 Serves 4</span>
+                  <span>🌿 Vegan</span>
+                  <span>🌾 GF</span>
+                </div>
+                <a href="recipes/tadka-dal.html" class="article-card__link">View Recipe →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 2. Aam Ka Achaar -->
+          <article class="article-card reveal reveal-delay-1" data-oil="mustard" data-time="quick" data-dietary="vegan">
+            <div class="article-card__image">
+              <div style="width:100%;height:100%;background:linear-gradient(135deg,#FFEBEE,#FFCDD2);display:flex;align-items:center;justify-content:center;font-size:3.5rem">🥭</div>
+              <div class="article-card__meta">
+                <span class="badge badge--gold">Preserve</span>
+                <span class="badge badge--green">⏱ 15 min + rest</span>
+              </div>
+            </div>
+            <div class="article-card__body">
+              <p class="article-card__tag">Mustard Oil · Pickle · Vegan</p>
+              <h3 class="article-card__title">Quick Aam Ka Achaar — No-Cook Mango Pickle</h3>
+              <p class="article-card__excerpt">Cold-pressed mustard oil's natural allyl isothiocyanate acts as a preservative — making it the only oil suitable for traditional raw achaar. Ready in 24 hours.</p>
+              <div class="article-card__footer">
+                <div class="recipe-tags"><span>🫙 Makes 1 jar</span><span>🌿 Vegan</span></div>
+                <a href="recipes/aam-ka-achaar.html" class="article-card__link">View Recipe →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 3. Kerala Meen Curry -->
+          <article class="article-card reveal reveal-delay-2" data-oil="coconut" data-time="medium" data-dietary="non-veg">
+            <div class="article-card__image">
+              <div style="width:100%;height:100%;background:linear-gradient(135deg,#E3F2FD,#BBDEFB);display:flex;align-items:center;justify-content:center;font-size:3.5rem">🐟</div>
+              <div class="article-card__meta">
+                <span class="badge badge--gold">Kerala</span>
+                <span class="badge badge--green">⏱ 35 min</span>
+              </div>
+            </div>
+            <div class="article-card__body">
+              <p class="article-card__tag">Coconut Oil · Fish Curry · Non-Veg</p>
+              <h3 class="article-card__title">Kerala Fish Curry with Cold-Pressed Coconut Oil</h3>
+              <p class="article-card__excerpt">A traditional Kerala fish curry with raw coconut milk. The coconut oil's lauric acid creates an authentic richness that refined coconut oil simply cannot deliver.</p>
+              <div class="article-card__footer">
+                <div class="recipe-tags"><span>👥 Serves 3–4</span><span>🌾 GF</span></div>
+                <a href="recipes/kerala-fish-curry.html" class="article-card__link">View Recipe →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 4. Sesame Ginger Dressing -->
+          <article class="article-card reveal" data-oil="sesame" data-time="quick" data-dietary="vegan">
+            <div class="article-card__image">
+              <div style="width:100%;height:100%;background:linear-gradient(135deg,#F3E5F5,#E1BEE7);display:flex;align-items:center;justify-content:center;font-size:3.5rem">🥗</div>
+              <div class="article-card__meta">
+                <span class="badge badge--gold">No-Cook</span>
+                <span class="badge badge--green">⏱ 10 min</span>
+              </div>
+            </div>
+            <div class="article-card__body">
+              <p class="article-card__tag">Sesame Oil · Dressing · Vegan</p>
+              <h3 class="article-card__title">Sesame Ginger Dressing for Warm Vegetable Salads</h3>
+              <p class="article-card__excerpt">Cold-pressed sesame oil's deep aromatic character transforms a simple warm salad into something extraordinary. Used unheated to preserve its full sesamol content.</p>
+              <div class="article-card__footer">
+                <div class="recipe-tags"><span>🌿 Vegan</span><span>🌾 GF</span></div>
+                <a href="recipes/sesame-ginger-dressing.html" class="article-card__link">View Recipe →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 5. Crispy Kachori -->
+          <article class="article-card reveal reveal-delay-1" data-oil="groundnut" data-time="medium" data-dietary="vegan">
+            <div class="article-card__image">
+              <div style="width:100%;height:100%;background:linear-gradient(135deg,#FFF3E0,#FFE0B2);display:flex;align-items:center;justify-content:center;font-size:3.5rem">🧆</div>
+              <div class="article-card__meta">
+                <span class="badge badge--gold">Snack</span>
+                <span class="badge badge--green">⏱ 30 min</span>
+              </div>
+            </div>
+            <div class="article-card__body">
+              <p class="article-card__tag">Groundnut Oil · Snack · Vegan</p>
+              <h3 class="article-card__title">Crispy Kachori Deep-Fried in Groundnut Oil</h3>
+              <p class="article-card__excerpt">The secret to a light, non-greasy kachori is oil that's genuinely hot before the dough goes in. Cold-pressed groundnut oil, with its high smoke point and clean flavour, is the only choice.</p>
+              <div class="article-card__footer">
+                <div class="recipe-tags"><span>🌿 Vegan</span><span>🎉 Festival-ready</span></div>
+                <a href="recipes/crispy-kachori.html" class="article-card__link">View Recipe →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 6. Kerala Appam -->
+          <article class="article-card reveal reveal-delay-2" data-oil="coconut" data-time="medium" data-dietary="vegan">
+            <div class="article-card__image">
+              <div style="width:100%;height:100%;background:linear-gradient(135deg,#E8F5E9,#C8E6C9);display:flex;align-items:center;justify-content:center;font-size:3.5rem">🥞</div>
+              <div class="article-card__meta">
+                <span class="badge badge--gold">Breakfast</span>
+                <span class="badge badge--green">⏱ 25 min</span>
+              </div>
+            </div>
+            <div class="article-card__body">
+              <p class="article-card__tag">Coconut Oil · Breakfast · Vegan</p>
+              <h3 class="article-card__title">Kerala Appam — Traditional Lacy Rice Pancake</h3>
+              <p class="article-card__excerpt">Appam requires coconut oil at every step: the fermentation, the cooking, the serving. Use cold-pressed for the authentic flavour that bottled aroma compounds cannot replicate.</p>
+              <div class="article-card__footer">
+                <div class="recipe-tags"><span>👥 Serves 4</span><span>🌿 Vegan</span></div>
+                <a href="#" class="article-card__link">View Recipe →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 7. Begun Bhaja -->
+          <article class="article-card reveal" data-oil="mustard" data-time="quick" data-dietary="vegan">
+            <div class="article-card__image">
+              <div style="width:100%;height:100%;background:linear-gradient(135deg,#EDE7F6,#D1C4E9);display:flex;align-items:center;justify-content:center;font-size:3.5rem">🍆</div>
+              <div class="article-card__meta">
+                <span class="badge badge--gold">Bengali</span>
+                <span class="badge badge--green">⏱ 15 min</span>
+              </div>
+            </div>
+            <div class="article-card__body">
+              <p class="article-card__tag">Mustard Oil · Bengali · Vegan</p>
+              <h3 class="article-card__title">Begun Bhaja — Crispy Pan-Fried Aubergine in Mustard Oil</h3>
+              <p class="article-card__excerpt">A deceptively simple Bengali staple where the oil is the flavour. Sliced aubergine, turmeric, salt, and the unmistakable heat of cold-pressed mustard oil make this a five-ingredient classic.</p>
+              <div class="article-card__footer">
+                <div class="recipe-tags"><span>👥 Serves 2</span><span>🌿 Vegan</span><span>🌾 GF</span></div>
+                <a href="recipes/begun-bhaja.html" class="article-card__link">View Recipe →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 8. Chettinad Pepper Chicken -->
+          <article class="article-card reveal reveal-delay-1" data-oil="sesame" data-time="long" data-dietary="non-veg">
+            <div class="article-card__image">
+              <div style="width:100%;height:100%;background:linear-gradient(135deg,#FFEBEE,#EF9A9A);display:flex;align-items:center;justify-content:center;font-size:3.5rem">🍗</div>
+              <div class="article-card__meta">
+                <span class="badge badge--gold">Chettinad</span>
+                <span class="badge badge--green">⏱ 55 min</span>
+              </div>
+            </div>
+            <div class="article-card__body">
+              <p class="article-card__tag">Sesame Oil · South Indian · Non-Veg</p>
+              <h3 class="article-card__title">Chettinad Pepper Chicken with Cold-Pressed Sesame Oil</h3>
+              <p class="article-card__excerpt">Chettinad cuisine from Tamil Nadu is one of India's most aromatic culinary traditions. The base of cold-pressed sesame oil carries the kalpasi, marathi mokku, and Chettinad spice blend beautifully.</p>
+              <div class="article-card__footer">
+                <div class="recipe-tags"><span>👥 Serves 4</span><span>🌶️ Hot</span><span>🌾 GF</span></div>
+                <a href="recipes/chettinad-pepper-chicken.html" class="article-card__link">View Recipe →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 9. Til Chikki -->
+          <article class="article-card reveal reveal-delay-2" data-oil="sesame" data-time="quick" data-dietary="vegan">
+            <div class="article-card__image">
+              <div style="width:100%;height:100%;background:linear-gradient(135deg,#FFF9C4,#FFF176);display:flex;align-items:center;justify-content:center;font-size:3.5rem">🍬</div>
+              <div class="article-card__meta">
+                <span class="badge badge--gold">Festival</span>
+                <span class="badge badge--green">⏱ 20 min</span>
+              </div>
+            </div>
+            <div class="article-card__body">
+              <p class="article-card__tag">Sesame Oil · Sweet · Vegan</p>
+              <h3 class="article-card__title">Til Chikki — Sesame Brittle for Makar Sankranti</h3>
+              <p class="article-card__excerpt">The traditional Makar Sankranti sweet — toasted sesame seeds set in jaggery syrup, with a thin coat of sesame oil to prevent sticking and add a final layer of nutty depth.</p>
+              <div class="article-card__footer">
+                <div class="recipe-tags"><span>🫙 Makes 12</span><span>🌿 Vegan</span><span>🎉 Festive</span></div>
+                <a href="recipes/til-chikki.html" class="article-card__link">View Recipe →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 10. Masala Omelette -->
+          <article class="article-card reveal" data-oil="groundnut" data-time="quick" data-dietary="vegetarian">
+            <div class="article-card__image">
+              <div style="width:100%;height:100%;background:linear-gradient(135deg,#FFFDE7,#FFF9C4);display:flex;align-items:center;justify-content:center;font-size:3.5rem">🍳</div>
+              <div class="article-card__meta">
+                <span class="badge badge--gold">Breakfast</span>
+                <span class="badge badge--green">⏱ 10 min</span>
+              </div>
+            </div>
+            <div class="article-card__body">
+              <p class="article-card__tag">Groundnut Oil · Breakfast · Vegetarian</p>
+              <h3 class="article-card__title">Mumbai Masala Omelette — Street-Style in 10 Minutes</h3>
+              <p class="article-card__excerpt">The iconic Mumbai street omelette — green chilli, onion, coriander, tomato — cooked in cold-pressed groundnut oil that adds a clean, neutral base so every spice comes through sharp and vivid.</p>
+              <div class="article-card__footer">
+                <div class="recipe-tags"><span>👥 Serves 1</span><span>⚡ Quick</span></div>
+                <a href="#" class="article-card__link">View Recipe →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 11. Rajasthani Ker Sangri -->
+          <article class="article-card reveal reveal-delay-1" data-oil="groundnut" data-time="medium" data-dietary="vegan">
+            <div class="article-card__image">
+              <div style="width:100%;height:100%;background:linear-gradient(135deg,#FBE9E7,#FFAB91);display:flex;align-items:center;justify-content:center;font-size:3.5rem">🥘</div>
+              <div class="article-card__meta">
+                <span class="badge badge--gold">Rajasthani</span>
+                <span class="badge badge--green">⏱ 35 min</span>
+              </div>
+            </div>
+            <div class="article-card__body">
+              <p class="article-card__tag">Groundnut Oil · Rajasthani · Vegan</p>
+              <h3 class="article-card__title">Ker Sangri — The Desert Bean Curry of Rajasthan</h3>
+              <p class="article-card__excerpt">Ker (desert berries) and sangri (dried desert beans) slow-cooked in groundnut oil with whole spices, yoghurt, and dried chillies. A dish that transforms extreme austerity into extraordinary flavour.</p>
+              <div class="article-card__footer">
+                <div class="recipe-tags"><span>👥 Serves 3</span><span>🌿 Vegan</span><span>🌾 GF</span></div>
+                <a href="#" class="article-card__link">View Recipe →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 12. Sorshe Ilish -->
+          <article class="article-card reveal reveal-delay-2" data-oil="mustard" data-time="medium" data-dietary="non-veg">
+            <div class="article-card__image">
+              <div style="width:100%;height:100%;background:linear-gradient(135deg,#E1F5FE,#80D8FF);display:flex;align-items:center;justify-content:center;font-size:3.5rem">🐟</div>
+              <div class="article-card__meta">
+                <span class="badge badge--gold">Bengali</span>
+                <span class="badge badge--green">⏱ 30 min</span>
+              </div>
+            </div>
+            <div class="article-card__body">
+              <p class="article-card__tag">Mustard Oil · Bengali · Non-Veg</p>
+              <h3 class="article-card__title">Sorshe Ilish — Hilsa Fish in Mustard Paste</h3>
+              <p class="article-card__excerpt">The most celebrated dish in Bengali cuisine: hilsa fish marinated in mustard paste, steamed or shallow-fried in cold-pressed mustard oil. The oil is not background — it is the dish.</p>
+              <div class="article-card__footer">
+                <div class="recipe-tags"><span>👥 Serves 4</span><span>🌶️ Medium</span></div>
+                <a href="#" class="article-card__link">View Recipe →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 13. Coconut Chutney -->
+          <article class="article-card reveal" data-oil="coconut" data-time="quick" data-dietary="vegan">
+            <div class="article-card__image">
+              <div style="width:100%;height:100%;background:linear-gradient(135deg,#E8F5E9,#A5D6A7);display:flex;align-items:center;justify-content:center;font-size:3.5rem">🥥</div>
+              <div class="article-card__meta">
+                <span class="badge badge--gold">South Indian</span>
+                <span class="badge badge--green">⏱ 10 min</span>
+              </div>
+            </div>
+            <div class="article-card__body">
+              <p class="article-card__tag">Coconut Oil · Condiment · Vegan</p>
+              <h3 class="article-card__title">Fresh Coconut Chutney with Tempered Coconut Oil</h3>
+              <p class="article-card__excerpt">The final tempering of mustard seeds and curry leaves in cold-pressed coconut oil is what separates an authentic South Indian coconut chutney from an imitation. The oil carries the aromatics into the paste.</p>
+              <div class="article-card__footer">
+                <div class="recipe-tags"><span>👥 Serves 4</span><span>🌿 Vegan</span><span>🌾 GF</span></div>
+                <a href="#" class="article-card__link">View Recipe →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 14. Bhindi Masala -->
+          <article class="article-card reveal reveal-delay-1" data-oil="groundnut" data-time="quick" data-dietary="vegan">
+            <div class="article-card__image">
+              <div style="width:100%;height:100%;background:linear-gradient(135deg,#DCEDC8,#AED581);display:flex;align-items:center;justify-content:center;font-size:3.5rem">🌿</div>
+              <div class="article-card__meta">
+                <span class="badge badge--gold">Everyday</span>
+                <span class="badge badge--green">⏱ 15 min</span>
+              </div>
+            </div>
+            <div class="article-card__body">
+              <p class="article-card__tag">Groundnut Oil · Everyday · Vegan</p>
+              <h3 class="article-card__title">Crispy Bhindi Masala — No Slime, Full Flavour</h3>
+              <p class="article-card__excerpt">The secret to non-slimy okra is high heat and dry oil from the start. Cold-pressed groundnut oil, with its high smoke point, gets the pan genuinely hot so the bhindi crisps rather than steams.</p>
+              <div class="article-card__footer">
+                <div class="recipe-tags"><span>👥 Serves 2</span><span>🌿 Vegan</span><span>⚡ Quick</span></div>
+                <a href="#" class="article-card__link">View Recipe →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 15. Navaratan Korma -->
+          <article class="article-card reveal reveal-delay-2" data-oil="groundnut" data-time="medium" data-dietary="vegetarian">
+            <div class="article-card__image">
+              <div style="width:100%;height:100%;background:linear-gradient(135deg,#FFF3E0,#FFCC80);display:flex;align-items:center;justify-content:center;font-size:3.5rem">🥕</div>
+              <div class="article-card__meta">
+                <span class="badge badge--gold">Mughlai</span>
+                <span class="badge badge--green">⏱ 40 min</span>
+              </div>
+            </div>
+            <div class="article-card__body">
+              <p class="article-card__tag">Groundnut Oil · Mughlai · Vegetarian</p>
+              <h3 class="article-card__title">Navaratan Korma — Nine-Jewel Vegetable Curry</h3>
+              <p class="article-card__excerpt">A rich, fragrant Mughlai korma with nine vegetables, nuts, and dried fruits in a cream and cashew gravy. The fried onion base — cooked in groundnut oil — is what gives this dish its signature depth.</p>
+              <div class="article-card__footer">
+                <div class="recipe-tags"><span>👥 Serves 6</span><span>🎉 Celebratory</span></div>
+                <a href="#" class="article-card__link">View Recipe →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 16. Coconut Rice -->
+          <article class="article-card reveal" data-oil="coconut" data-time="quick" data-dietary="vegan">
+            <div class="article-card__image">
+              <div style="width:100%;height:100%;background:linear-gradient(135deg,#F1F8E9,#DCEDC8);display:flex;align-items:center;justify-content:center;font-size:3.5rem">🍚</div>
+              <div class="article-card__meta">
+                <span class="badge badge--gold">South Indian</span>
+                <span class="badge badge--green">⏱ 20 min</span>
+              </div>
+            </div>
+            <div class="article-card__body">
+              <p class="article-card__tag">Coconut Oil · South Indian · Vegan</p>
+              <h3 class="article-card__title">Thengai Sadam — Tamil Coconut Rice with Tempered Nuts</h3>
+              <p class="article-card__excerpt">Thengai sadam is a temple prasad staple in Tamil Nadu — cooked rice mixed with fresh coconut and tempered in coconut oil with cashews, chana dal, and green chillies. Pure, simple, perfect.</p>
+              <div class="article-card__footer">
+                <div class="recipe-tags"><span>👥 Serves 3</span><span>🌿 Vegan</span><span>🌾 GF</span></div>
+                <a href="#" class="article-card__link">View Recipe →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 17. Aloo Posto -->
+          <article class="article-card reveal reveal-delay-1" data-oil="mustard" data-time="medium" data-dietary="vegan">
+            <div class="article-card__image">
+              <div style="width:100%;height:100%;background:linear-gradient(135deg,#F9FBE7,#F0F4C3);display:flex;align-items:center;justify-content:center;font-size:3.5rem">🥔</div>
+              <div class="article-card__meta">
+                <span class="badge badge--gold">Bengali</span>
+                <span class="badge badge--green">⏱ 25 min</span>
+              </div>
+            </div>
+            <div class="article-card__body">
+              <p class="article-card__tag">Mustard Oil · Bengali · Vegan</p>
+              <h3 class="article-card__title">Aloo Posto — Potatoes in Poppy Seed Paste</h3>
+              <p class="article-card__excerpt">One of Bengal's most beloved home dishes: cubed potatoes cooked slowly in cold-pressed mustard oil with a paste of posto (poppy seeds), green chilli, and a hint of sugar. Deeply comforting.</p>
+              <div class="article-card__footer">
+                <div class="recipe-tags"><span>👥 Serves 3</span><span>🌿 Vegan</span><span>🌾 GF</span></div>
+                <a href="#" class="article-card__link">View Recipe →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 18. Sesame Rice Noodles -->
+          <article class="article-card reveal reveal-delay-2" data-oil="sesame" data-time="quick" data-dietary="vegan">
+            <div class="article-card__image">
+              <div style="width:100%;height:100%;background:linear-gradient(135deg,#FCE4EC,#F48FB1);display:flex;align-items:center;justify-content:center;font-size:3.5rem">🍜</div>
+              <div class="article-card__meta">
+                <span class="badge badge--gold">Quick Meal</span>
+                <span class="badge badge--green">⏱ 15 min</span>
+              </div>
+            </div>
+            <div class="article-card__body">
+              <p class="article-card__tag">Sesame Oil · Noodles · Vegan</p>
+              <h3 class="article-card__title">Cold Sesame Rice Noodles — 15-Minute Lunch</h3>
+              <p class="article-card__excerpt">Cold-pressed sesame oil tossed through rice noodles with ginger, garlic, tamari, and spring onion — a recipe where the oil is used as the dressing, not the cooking medium. Full flavour, zero heat needed.</p>
+              <div class="article-card__footer">
+                <div class="recipe-tags"><span>👥 Serves 2</span><span>🌿 Vegan</span><span>⚡ Quick</span></div>
+                <a href="#" class="article-card__link">View Recipe →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- NO RESULTS message -->
+          <div class="no-results" id="no-results" style="display:none;grid-column:1/-1;text-align:center;padding:var(--space-16) 0;">
+            <p style="font-size:var(--text-lg);color:var(--color-muted)">No recipes match your current filters.</p>
+            <button class="btn btn--secondary btn--sm" style="margin-top:var(--space-4)" onclick="resetFilters()">Clear Filters</button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FESTIVAL KITCHEN CLUSTER ===== -->
+    <section class="section" style="background:var(--color-white)" aria-labelledby="festival-heading">
+      <div class="container">
+        <div class="section-header" style="text-align:center;margin-bottom:var(--space-12)">
+          <p class="section-label">The Festival Table</p>
+          <h2 id="festival-heading">Cooking for India's Great Celebrations</h2>
+          <p style="max-width:580px;margin-inline:auto;color:var(--color-muted)">Each festival has its oils, its rituals, its recipes. These collections bring together the traditional dishes of India's greatest celebrations — cooked the way they were always meant to be.</p>
+        </div>
+
+        <div class="festival-grid">
+
+          <div class="festival-card" style="--festival-color:var(--color-saffron)">
+            <div class="festival-card__icon" aria-hidden="true">🪔</div>
+            <div class="festival-card__body">
+              <p class="festival-card__label">October / November</p>
+              <h3 class="festival-card__title">Diwali Kitchen</h3>
+              <p class="festival-card__desc">From chakli and mathri fried in groundnut oil to besan laddoo cooked in ghee, and the puris that begin the festival meal — Diwali is India's greatest frying festival. Plus: oil lamp guide.</p>
+              <ul class="festival-card__recipes">
+                <li>Chakli &amp; Mathri (Groundnut Oil)</li>
+                <li>Besan Laddoo (Ghee)</li>
+                <li>Diwali Puris (Groundnut Oil)</li>
+                <li>Karanji (Coconut Filling)</li>
+              </ul>
+              <a href="#" class="btn btn--outline-gold btn--sm">Browse Collection →</a>
+            </div>
+          </div>
+
+          <div class="festival-card" style="--festival-color:var(--color-coconut)">
+            <div class="festival-card__icon" aria-hidden="true">🌺</div>
+            <div class="festival-card__body">
+              <p class="festival-card__label">August / September</p>
+              <h3 class="festival-card__title">Onam Sadhya</h3>
+              <p class="festival-card__desc">The 26-dish Onam Sadhya feast is Kerala's most elaborate meal — served on banana leaf with everything from avial to payasam. Coconut oil runs through every dish without exception.</p>
+              <ul class="festival-card__recipes">
+                <li>Avial (Coconut Oil)</li>
+                <li>Olan &amp; Erissery (Coconut Oil)</li>
+                <li>Payasam (Coconut Milk)</li>
+                <li>Kalan &amp; Pachadi (Coconut Oil)</li>
+              </ul>
+              <a href="#" class="btn btn--outline-gold btn--sm">Browse Collection →</a>
+            </div>
+          </div>
+
+          <div class="festival-card" style="--festival-color:var(--color-sesame)">
+            <div class="festival-card__icon" aria-hidden="true">☀️</div>
+            <div class="festival-card__body">
+              <p class="festival-card__label">January</p>
+              <h3 class="festival-card__title">Makar Sankranti Sweets</h3>
+              <p class="festival-card__desc">Sesame is the sacred grain of Makar Sankranti — the winter harvest festival celebrated across India as Pongal, Lohri, and Uttarayan. Til everywhere: chikki, laddoo, pongal.</p>
+              <ul class="festival-card__recipes">
+                <li>Til Chikki (Sesame Oil)</li>
+                <li>Tilgul Laddoo (Sesame Oil)</li>
+                <li>Sakkarai Pongal (Coconut Oil)</li>
+                <li>Gajak (Sesame &amp; Jaggery)</li>
+              </ul>
+              <a href="#" class="btn btn--outline-gold btn--sm">Browse Collection →</a>
+            </div>
+          </div>
+
+          <div class="festival-card" style="--festival-color:var(--color-mustard)">
+            <div class="festival-card__icon" aria-hidden="true">🌾</div>
+            <div class="festival-card__body">
+              <p class="festival-card__label">Oct / Nov · 9 Days</p>
+              <h3 class="festival-card__title">Navratri Fasting Table</h3>
+              <p class="festival-card__desc">Nine days of fasting, nine days of sattvic cooking. Kuttu ka atta, sabudana, singhara flour — all fried in groundnut oil. Pure ingredients, pure preparation, pure intention.</p>
+              <ul class="festival-card__recipes">
+                <li>Sabudana Khichdi (Groundnut Oil)</li>
+                <li>Kuttu Ka Paratha (Groundnut Oil)</li>
+                <li>Singhara Halwa (Ghee)</li>
+                <li>Aloo Jeera (Groundnut Oil)</li>
+              </ul>
+              <a href="#" class="btn btn--outline-gold btn--sm">Browse Collection →</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== OIL MASTERCLASS ===== -->
+    <section class="section masterclass-section" aria-labelledby="masterclass-heading">
+      <div class="container">
+        <div class="section-header" style="text-align:center;margin-bottom:var(--space-12)">
+          <p class="section-label">Cook's Notes</p>
+          <h2 id="masterclass-heading">4 Techniques Every Indian Cook Should Master</h2>
+          <p style="max-width:560px;margin-inline:auto;opacity:0.75">Understanding how to use each oil at its best — the right temperature, the right method, the right moment — is what separates good Indian cooking from great Indian cooking.</p>
+        </div>
+
+        <div class="masterclass-grid">
+
+          <div class="masterclass-card">
+            <div class="masterclass-card__number">01</div>
+            <div class="masterclass-card__oil" style="color:var(--color-mustard)">🌼 Mustard Oil</div>
+            <h3 class="masterclass-card__title">The Smoking Technique (Kachchi Ghani Method)</h3>
+            <p class="masterclass-card__body">Cold-pressed mustard oil should be heated until it just begins to smoke before adding ingredients — this is called the "kachchi ghani" method. This brief smoking breaks down the pungent allyl isothiocyanate, releasing the nutty, mellow base while keeping the oil's depth. Add your spices when the smoke clears.</p>
+            <div class="masterclass-card__tip">💡 Pro tip: heat 1 tbsp oil per serving. Overloading the pan drops the temperature and the oil stews rather than fries.</div>
+          </div>
+
+          <div class="masterclass-card">
+            <div class="masterclass-card__number">02</div>
+            <div class="masterclass-card__oil" style="color:var(--color-groundnut)">🥜 Groundnut Oil</div>
+            <h3 class="masterclass-card__title">High-Heat Frying — The 180°C Rule</h3>
+            <p class="masterclass-card__body">Cold-pressed groundnut oil has a smoke point around 160–180°C — high enough for deep frying without breakdown. The key to non-greasy fried food is maintaining this temperature throughout. If the oil is too cool, food absorbs it; too hot, it burns before cooking through. Use a thermometer or test with a small cube of bread (should turn golden in 30 seconds).</p>
+            <div class="masterclass-card__tip">💡 Pro tip: fry in small batches. Each addition of cold food drops the temperature — patience between batches is the difference between crispy and soggy.</div>
+          </div>
+
+          <div class="masterclass-card">
+            <div class="masterclass-card__number">03</div>
+            <div class="masterclass-card__oil" style="color:var(--color-sesame)">✨ Sesame Oil</div>
+            <h3 class="masterclass-card__title">The Finishing Drizzle — When Not to Cook It</h3>
+            <p class="masterclass-card__body">Cold-pressed sesame oil's most valuable compounds — sesamol, sesamin, sesamolin — are heat-sensitive. For South Indian cooking, use it for tempering at low-medium heat. But for maximum nutritional and flavour impact, add it at the end: drizzle over cooked noodles, whisk into dressings, or fold into chutneys after the heat is off. The aromatic compounds stay intact.</p>
+            <div class="masterclass-card__tip">💡 Pro tip: a 1:3 mix of cold-pressed sesame oil and groundnut oil works beautifully for cooking — you get the flavour of sesame with the heat stability of groundnut.</div>
+          </div>
+
+          <div class="masterclass-card">
+            <div class="masterclass-card__number">04</div>
+            <div class="masterclass-card__oil" style="color:var(--color-coconut)">🥥 Coconut Oil</div>
+            <h3 class="masterclass-card__title">Tempering in Coconut Oil — The South Indian Foundation</h3>
+            <p class="masterclass-card__body">Almost every South Indian dish begins with the same sequence in coconut oil: heat oil → add mustard seeds and wait for them to splutter → add curry leaves (stand back — they spit) → add dried red chillies. This 90-second sequence is the flavour foundation of a cuisine. Cold-pressed coconut oil carries these aromatics better than refined because its natural compounds interact with and amplify the spices.</p>
+            <div class="masterclass-card__tip">💡 Pro tip: coconut oil solidifies below 24°C. If your oil is solid, simply warm the jar briefly — it's a natural property of a pure, unrefined oil, not a defect.</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- OIL PAIRING GUIDE -->
+    <section class="section" style="background:var(--color-cream)" aria-labelledby="pairing-heading">
+      <div class="container">
+        <div class="section-header" style="text-align:center;margin-bottom:var(--space-12)">
+          <p class="section-label">Quick Reference</p>
+          <h2 id="pairing-heading">Which Oil for Which Dish?</h2>
+          <p style="max-width:520px;margin-inline:auto;color:var(--color-muted)">Not all oils suit all cooking methods. Use this guide to choose the right Bharat Oil for the right job — at a glance.</p>
+        </div>
+
+        <div class="oil-pairing-grid">
+          <div class="oil-pairing-card">
+            <div class="oil-pairing-card__oil" style="color:var(--color-mustard)">🌼 Mustard Oil</div>
+            <p style="font-size:var(--text-sm);color:var(--color-muted);margin-bottom:var(--space-3)">Pungent · Earthy · High heat</p>
+            <ul class="oil-pairing-card__list">
+              <li>✓ Tempering &amp; tarka</li>
+              <li>✓ Pickling &amp; achaar</li>
+              <li>✓ Deep frying (after smoking)</li>
+              <li>✓ Fish &amp; seafood dishes</li>
+              <li>✓ Bengali &amp; Punjabi cuisine</li>
+              <li>✓ Marinades</li>
+            </ul>
+            <a href="products/mustard-oil.html" class="btn btn--outline-gold btn--sm">Explore Oil →</a>
+          </div>
+          <div class="oil-pairing-card">
+            <div class="oil-pairing-card__oil" style="color:var(--color-groundnut)">🥜 Groundnut Oil</div>
+            <p style="font-size:var(--text-sm);color:var(--color-muted);margin-bottom:var(--space-3)">Mild · Neutral · Very high heat</p>
+            <ul class="oil-pairing-card__list">
+              <li>✓ Deep frying (best choice)</li>
+              <li>✓ All-purpose sautéing</li>
+              <li>✓ Biryani &amp; rice dishes</li>
+              <li>✓ Baking &amp; roasting</li>
+              <li>✓ Everyday cooking</li>
+              <li>✓ Dressings &amp; marinades</li>
+            </ul>
+            <a href="products/groundnut-oil.html" class="btn btn--outline-gold btn--sm">Explore Oil →</a>
+          </div>
+          <div class="oil-pairing-card">
+            <div class="oil-pairing-card__oil" style="color:var(--color-sesame)">✨ Sesame Oil</div>
+            <p style="font-size:var(--text-sm);color:var(--color-muted);margin-bottom:var(--space-3)">Aromatic · Nutty · Medium heat</p>
+            <ul class="oil-pairing-card__list">
+              <li>✓ Low-medium heat cooking</li>
+              <li>✓ Finishing drizzle</li>
+              <li>✓ South Indian &amp; Tamil dishes</li>
+              <li>✓ Noodle &amp; salad dressings</li>
+              <li>✓ Chutneys &amp; dips</li>
+              <li>✓ Abhyanga (Ayurvedic massage)</li>
+            </ul>
+            <a href="products/sesame-oil.html" class="btn btn--outline-gold btn--sm">Explore Oil →</a>
+          </div>
+          <div class="oil-pairing-card">
+            <div class="oil-pairing-card__oil" style="color:var(--color-coconut)">🥥 Coconut Oil</div>
+            <p style="font-size:var(--text-sm);color:var(--color-muted);margin-bottom:var(--space-3)">Tropical · Creamy · Medium heat</p>
+            <ul class="oil-pairing-card__list">
+              <li>✓ Kerala &amp; South Indian cuisine</li>
+              <li>✓ Tempering spices</li>
+              <li>✓ Baking &amp; sweets</li>
+              <li>✓ Appam, puttu, idiyappam</li>
+              <li>✓ Chutneys &amp; coconut curries</li>
+              <li>✓ Hair &amp; skin care</li>
+            </ul>
+            <a href="products/coconut-oil.html" class="btn btn--outline-gold btn--sm">Explore Oil →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER STRIP -->
+    <section class="newsletter-strip" aria-labelledby="newsletter-heading">
+      <div class="container">
+        <div class="newsletter-strip__inner">
+          <div class="newsletter-strip__text">
+            <p class="section-label" style="color:var(--color-gold-light)">New Recipes Every Month</p>
+            <h2 id="newsletter-heading">Get Recipes &amp; Kitchen Notes in Your Inbox</h2>
+            <p>One email a month — a seasonal recipe, a cooking tip, and the latest from the Bharat Oils kitchen. No spam. Unsubscribe anytime.</p>
+          </div>
+          <form class="newsletter-form" action="mailto:info@bagason.com" method="GET" onsubmit="return false;">
+            <div class="newsletter-form__row">
+              <input type="email" class="newsletter-form__input" placeholder="your@email.com" aria-label="Email address">
+              <button type="submit" class="btn btn--where-to-buy">Subscribe →</button>
+            </div>
+            <p class="newsletter-form__note">No spam. One email per month. Unsubscribe anytime.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-brand__logo"><img src="Bharat - brand logo .png" alt="Bharat Oils" class="footer-logo__img"></a>
+          <p class="footer-brand__desc">100% pure cold-pressed oils — zero chemicals, zero compromise.</p>
+          <div class="footer-certifications"><span class="footer-cert">FSSAI Compliant</span><span class="footer-cert">Zero Additives</span><span class="footer-cert">Cold-Pressed</span></div>
+        </div>
+        <nav aria-label="Our Oils"><p class="footer-col__title">Our Oils</p>
+          <ul class="footer-col__links" role="list">
+            <li><a href="products/groundnut-oil.html">Groundnut Oil</a></li>
+            <li><a href="products/sesame-oil.html">Sesame Oil</a></li>
+            <li><a href="products/mustard-oil.html">Mustard Oil</a></li>
+            <li><a href="products/coconut-oil.html">Coconut Oil</a></li>
+            <li><a href="products/deepam-oil.html">Deepam Oil</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Company"><p class="footer-col__title">Company</p>
+          <ul class="footer-col__links" role="list">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="blog.html">Wellness Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div><p class="footer-col__title">Get in Touch</p>
+          <p style="font-size:var(--text-sm);margin-bottom:var(--space-4)"><a href="mailto:info@bagason.com" style="color:var(--color-gold-light)">info@bagason.com</a></p>
+          <a href="https://wa.me/971552262980" class="footer-whatsapp" target="_blank" rel="noopener noreferrer"><span>💬</span> WhatsApp Us</a>
+        </div>
+      </div>
+      <div class="site-footer__bottom">
+        <p class="footer-copyright">© 2026 Bharat Oils. All rights reserved.</p>
+        <nav class="footer-legal"><a href="#">Privacy Policy</a><a href="#">Terms</a></nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Multi-dimensional recipe filter
+    const activeFilters = { oil: 'all', time: 'all', dietary: 'all' };
+
+    function setFilter(dimension, value, btn) {
+      activeFilters[dimension] = value;
+      btn.closest('.filter-group__buttons').querySelectorAll('.filter-btn').forEach(b => {
+        b.classList.remove('active');
+        b.setAttribute('aria-pressed', 'false');
+      });
+      btn.classList.add('active');
+      btn.setAttribute('aria-pressed', 'true');
+      applyFilters();
+    }
+
+    function applyFilters() {
+      const cards = document.querySelectorAll('#recipe-grid .article-card');
+      let visible = 0;
+
+      cards.forEach(card => {
+        const oilMatch = activeFilters.oil === 'all' || card.dataset.oil === activeFilters.oil;
+
+        let timeMatch = true;
+        if (activeFilters.time === 'quick') timeMatch = card.dataset.time === 'quick';
+        else if (activeFilters.time === 'medium') timeMatch = card.dataset.time === 'quick' || card.dataset.time === 'medium';
+        else if (activeFilters.time === 'long') timeMatch = card.dataset.time === 'long';
+
+        const dietaryMatch = activeFilters.dietary === 'all' || card.dataset.dietary === activeFilters.dietary;
+
+        const show = oilMatch && timeMatch && dietaryMatch;
+        card.style.display = show ? '' : 'none';
+        if (show) visible++;
+      });
+
+      const countEl = document.getElementById('recipe-count');
+      if (countEl) countEl.textContent = visible;
+
+      const noResults = document.getElementById('no-results');
+      if (noResults) noResults.style.display = visible === 0 ? '' : 'none';
+    }
+
+    function resetFilters() {
+      activeFilters.oil = 'all';
+      activeFilters.time = 'all';
+      activeFilters.dietary = 'all';
+      document.querySelectorAll('.filter-group__buttons .filter-btn').forEach(b => {
+        b.classList.remove('active');
+        b.setAttribute('aria-pressed', 'false');
+      });
+      document.querySelectorAll('.filter-group__buttons .filter-btn:first-child').forEach(b => {
+        b.classList.add('active');
+        b.setAttribute('aria-pressed', 'true');
+      });
+      applyFilters();
+    }
+  </script>
+</body>
+</html>

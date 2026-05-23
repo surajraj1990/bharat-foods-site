@@ -1,0 +1,105 @@
+/* ===================================================
+   BHARAT OILS — Design Tokens
+   =================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap');
+
+:root {
+  /* ─── Brand Colors (extracted from Bharat Oils logo & label) ─── */
+
+  /* Navy Blue — "Bharat" wordmark, primary brand color */
+  --color-navy:        #1B3A8F;
+  --color-navy-dark:   #142D6F;
+  --color-navy-light:  #EEF2FB;
+
+  /* Saffron Orange — "GO FOR" tagline, primary CTA color */
+  --color-saffron:     #E8701E;
+  --color-saffron-dark:#C05C12;
+  --color-saffron-light:#FDF0E8;
+
+  /* Forest Green — "NATURAL" tagline, secondary color */
+  --color-green:       #1A7A2A;
+  --color-green-mid:   #267832;
+  --color-green-light: #EAF5EC;
+
+  /* Heritage Gold — "Since 1965" badge, accent detail */
+  --color-gold:        #C9A200;
+  --color-gold-dark:   #A88200;
+  --color-gold-light:  #F5E6A0;
+  --color-gold-faint:  #FBF8EE;
+
+  /* Alias mappings for backward compat with existing component references */
+  --color-green-deep:  #1B3A8F;   /* navy replaces old deep-green in footer/headings */
+
+  /* Neutrals */
+  --color-cream:       #FAF8F2;
+  --color-cream-dark:  #F0EAD6;
+  --color-charcoal:    #1A1A1A;
+  --color-body:        #3C3C3C;
+  --color-muted:       #7A7A7A;
+  --color-white:       #FFFFFF;
+  --color-divider:     #E5DCC8;
+
+  /* Product Identity Colors */
+  --color-mustard:     #D4A017;
+  --color-groundnut:   #C17F3B;
+  --color-sesame:      #8B6914;
+  --color-coconut:     #3A8B4A;
+  --color-deepam:      #B5451B;
+
+  /* Typography */
+  --font-display:  'Playfair Display', Georgia, serif;
+  --font-body:     'Inter', -apple-system, sans-serif;
+
+  --text-xs:   0.75rem;
+  --text-sm:   0.875rem;
+  --text-base: 1rem;
+  --text-lg:   1.125rem;
+  --text-xl:   1.25rem;
+  --text-2xl:  1.5rem;
+  --text-3xl:  1.875rem;
+  --text-4xl:  2.25rem;
+  --text-5xl:  3rem;
+  --text-6xl:  3.75rem;
+  --text-7xl:  4.5rem;
+
+  /* Spacing (8px grid) */
+  --space-1:  0.25rem;
+  --space-2:  0.5rem;
+  --space-3:  0.75rem;
+  --space-4:  1rem;
+  --space-5:  1.25rem;
+  --space-6:  1.5rem;
+  --space-8:  2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+  --space-32: 8rem;
+
+  /* Layout */
+  --max-width:        1280px;
+  --max-width-narrow: 800px;
+  --nav-height:       80px;
+
+  /* Borders */
+  --radius-sm:  4px;
+  --radius-md:  8px;
+  --radius-lg:  16px;
+  --radius-xl:  24px;
+  --radius-pill: 999px;
+
+  /* Shadows */
+  --shadow-sm:  0 1px 3px rgba(0,0,0,0.08);
+  --shadow-md:  0 4px 16px rgba(0,0,0,0.10);
+  --shadow-lg:  0 12px 40px rgba(0,0,0,0.14);
+  --shadow-gold:    0 4px 24px rgba(201,162,0,0.25);
+  --shadow-saffron: 0 4px 24px rgba(232,112,30,0.30);
+  --shadow-navy:    0 4px 24px rgba(27,58,143,0.20);
+
+  /* Transitions */
+  --transition-fast:   150ms ease;
+  --transition-base:   250ms ease;
+  --transition-slow:   400ms ease;
+}

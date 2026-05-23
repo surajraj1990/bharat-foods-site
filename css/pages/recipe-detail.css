@@ -1,0 +1,393 @@
+/* ===================================================
+   BHARAT OILS — Recipe Detail Page Styles
+   =================================================== */
+
+/* --- Recipe Hero --- */
+
+.recipe-hero {
+  background: var(--color-cream);
+  padding-block: var(--space-12) var(--space-10);
+  border-bottom: 1px solid var(--color-divider);
+}
+
+.recipe-breadcrumb {
+  font-size: var(--text-sm);
+  color: var(--color-muted);
+  margin-bottom: var(--space-5);
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.recipe-breadcrumb a {
+  color: var(--color-muted);
+  text-decoration: none;
+}
+
+.recipe-breadcrumb a:hover { color: var(--color-saffron); }
+
+.recipe-breadcrumb__sep { opacity: 0.4; }
+
+.recipe-hero__inner {
+  display: grid;
+  grid-template-columns: 1fr 420px;
+  gap: var(--space-16);
+  align-items: start;
+}
+
+@media (max-width: 960px) {
+  .recipe-hero__inner { grid-template-columns: 1fr; }
+}
+
+.recipe-hero__oil-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  background: var(--color-gold-faint);
+  border: 1.5px solid var(--color-gold);
+  border-radius: var(--radius-pill);
+  padding: var(--space-2) var(--space-4);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-green-deep);
+  margin-bottom: var(--space-5);
+  text-decoration: none;
+  transition: background var(--transition-fast);
+}
+
+.recipe-hero__oil-badge:hover {
+  background: var(--color-gold-faint);
+  border-color: var(--color-saffron);
+}
+
+.recipe-hero h1 {
+  font-size: clamp(var(--text-2xl), 3.5vw, var(--text-4xl));
+  color: var(--color-green-deep);
+  line-height: 1.2;
+  margin-bottom: var(--space-5);
+}
+
+.recipe-hero__intro {
+  font-size: var(--text-lg);
+  color: var(--color-body);
+  line-height: 1.75;
+  margin-bottom: var(--space-8);
+  max-width: 560px;
+}
+
+.recipe-stats {
+  display: flex;
+  gap: var(--space-8);
+  flex-wrap: wrap;
+  padding: var(--space-6) 0;
+  border-top: 1px solid var(--color-divider);
+  border-bottom: 1px solid var(--color-divider);
+}
+
+.recipe-stat {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.recipe-stat__label {
+  font-size: var(--text-xs);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+}
+
+.recipe-stat__value {
+  font-size: var(--text-lg);
+  font-weight: 700;
+  color: var(--color-green-deep);
+  font-family: var(--font-display);
+}
+
+/* Hero image / visual */
+.recipe-hero__visual {
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  aspect-ratio: 4/3;
+  background: var(--color-gold-faint);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 6rem;
+  box-shadow: var(--shadow-md);
+}
+
+.recipe-hero__visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* --- Recipe Body Layout --- */
+
+.recipe-body {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: var(--space-16);
+  align-items: start;
+  padding-block: var(--space-16);
+}
+
+@media (max-width: 960px) {
+  .recipe-body { grid-template-columns: 1fr; }
+}
+
+/* --- Ingredients Sidebar --- */
+
+.ingredients-card {
+  background: var(--color-cream);
+  border-radius: var(--radius-xl);
+  padding: var(--space-8);
+  border: 1px solid var(--color-divider);
+  position: sticky;
+  top: calc(var(--nav-height, 72px) + var(--space-6));
+}
+
+.ingredients-card__title {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  color: var(--color-green-deep);
+  margin-bottom: var(--space-6);
+  padding-bottom: var(--space-4);
+  border-bottom: 2px solid var(--color-gold);
+}
+
+.ingredients-group {
+  margin-bottom: var(--space-6);
+}
+
+.ingredients-group__label {
+  font-size: var(--text-xs);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+  margin-bottom: var(--space-3);
+}
+
+.ingredients-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ingredients-list li {
+  font-size: var(--text-sm);
+  color: var(--color-body);
+  padding: var(--space-2) 0;
+  border-bottom: 1px solid var(--color-divider);
+  line-height: 1.5;
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-2);
+}
+
+.ingredients-list li::before {
+  content: '·';
+  color: var(--color-saffron);
+  font-weight: 900;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.ingredients-list li:last-child { border-bottom: none; }
+
+/* Highlight Bharat brand in ingredients */
+.ingredients-list li strong {
+  color: var(--color-green-deep);
+}
+
+.ingredients-card__buy {
+  margin-top: var(--space-6);
+  padding-top: var(--space-6);
+  border-top: 1px solid var(--color-divider);
+}
+
+.ingredients-card__buy p {
+  font-size: var(--text-xs);
+  color: var(--color-muted);
+  margin-bottom: var(--space-3);
+}
+
+/* --- Method Steps --- */
+
+.method-section h2 {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  color: var(--color-green-deep);
+  margin-bottom: var(--space-8);
+  padding-bottom: var(--space-4);
+  border-bottom: 2px solid var(--color-gold);
+}
+
+.method-steps {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 var(--space-12);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+}
+
+.method-step {
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  gap: var(--space-6);
+  align-items: start;
+}
+
+.method-step__number {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--color-saffron);
+  color: var(--color-white);
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(232,112,30,0.25);
+}
+
+.method-step__text {
+  font-size: var(--text-base);
+  line-height: 1.85;
+  color: var(--color-body);
+  padding-top: var(--space-3);
+}
+
+/* Highlight Bharat brand mentions in method steps */
+.method-step__text strong {
+  color: var(--color-green-deep);
+  font-weight: 600;
+}
+
+/* --- Brand Callout --- */
+
+.brand-callout {
+  background: linear-gradient(135deg, var(--color-gold-faint) 0%, var(--color-cream) 100%);
+  border: 1.5px solid var(--color-gold);
+  border-radius: var(--radius-xl);
+  padding: var(--space-8);
+  margin-bottom: var(--space-10);
+}
+
+.brand-callout__icon {
+  font-size: 2rem;
+  margin-bottom: var(--space-3);
+}
+
+.brand-callout__title {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  color: var(--color-green-deep);
+  margin-bottom: var(--space-4);
+}
+
+.brand-callout__body {
+  font-size: var(--text-sm);
+  line-height: 1.8;
+  color: var(--color-body);
+  margin-bottom: var(--space-5);
+}
+
+/* --- Cook's Notes --- */
+
+.cook-notes {
+  background: var(--color-navy);
+  border-radius: var(--radius-xl);
+  padding: var(--space-8);
+  margin-bottom: var(--space-10);
+}
+
+.cook-notes__title {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  color: var(--color-gold-light);
+  margin-bottom: var(--space-6);
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.cook-notes__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.cook-notes__list li {
+  font-size: var(--text-sm);
+  color: rgba(255,255,255,0.82);
+  line-height: 1.75;
+  padding-left: var(--space-6);
+  position: relative;
+}
+
+.cook-notes__list li::before {
+  content: '💡';
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 0.9rem;
+}
+
+/* --- Buy Strip --- */
+
+.recipe-buy-strip {
+  background: linear-gradient(135deg, var(--color-green-deep) 0%, #1A3A10 100%);
+  border-radius: var(--radius-xl);
+  padding: var(--space-8) var(--space-10);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-6);
+  flex-wrap: wrap;
+}
+
+.recipe-buy-strip__text h3 {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  color: var(--color-white);
+  margin-bottom: var(--space-2);
+}
+
+.recipe-buy-strip__text p {
+  font-size: var(--text-sm);
+  color: rgba(255,255,255,0.7);
+}
+
+.recipe-buy-strip__actions {
+  display: flex;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+  flex-shrink: 0;
+}
+
+/* --- Related Recipes --- */
+
+.related-recipes {
+  background: var(--color-cream);
+  padding-block: var(--space-20);
+}
+
+.related-recipes h2 {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  color: var(--color-green-deep);
+  margin-bottom: var(--space-10);
+  text-align: center;
+}

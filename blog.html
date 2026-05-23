@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wellness Blog — Bharat Oils | Cold-Pressed Oil Science, Ayurveda &amp; Cooking</title>
+  <meta name="description" content="The Bharat Oils wellness blog: science-backed articles on cold-pressed oils, Ayurvedic traditions, oil chemistry, nutrition, purity testing, and the truth about what's in your bottle.">
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages/culinary.css">
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="site-nav" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="nav-logo" aria-label="Bharat Oils — Go For Natural">
+        <img src="Bharat - brand logo .png" alt="Bharat Oils — Go For Natural" class="nav-logo__img">
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="shop.html">Our Oils</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="recipes.html">Recipes</a></li>
+        <li><a href="blog.html" class="active">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="https://www.amazon.ae/s?k=bharat+oils" class="btn btn--primary btn--sm" target="_blank" rel="noopener noreferrer">Buy Now</a>
+      </div>
+      <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- PAGE HEADER -->
+    <header class="page-header" role="banner">
+      <div class="container">
+        <p class="section-label">Wellness &amp; Knowledge</p>
+        <h1>The Bharat Oils Wellness Blog</h1>
+        <p class="page-header__sub">Science-backed articles on cold-pressed oils, Ayurvedic traditions, oil chemistry, nutrition, and the truth about what's in your bottle. Because informed consumers make better choices.</p>
+      </div>
+    </header>
+
+    <!-- FILTER BAR -->
+    <section class="section filter-section" aria-label="Filter articles">
+      <div class="container">
+        <div class="filter-bar" role="toolbar" aria-label="Filter articles">
+          <button class="filter-btn active" data-filter="all" aria-pressed="true">All Articles</button>
+          <button class="filter-btn" data-filter="wellness" aria-pressed="false">🌿 Wellness &amp; Ayurveda</button>
+          <button class="filter-btn" data-filter="purity" aria-pressed="false">🔬 Purity &amp; Science</button>
+          <button class="filter-btn" data-filter="ritual" aria-pressed="false">🪔 Ritual &amp; Puja</button>
+          <button class="filter-btn" data-filter="nutrition" aria-pressed="false">❤️ Nutrition</button>
+          <button class="filter-btn" data-filter="cooking" aria-pressed="false">🍳 Cooking Tips</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED ARTICLE -->
+    <section class="section" style="padding-top:0" aria-labelledby="featured-heading">
+      <div class="container">
+        <div class="featured-article">
+          <div class="featured-article__image" aria-hidden="true" style="background:linear-gradient(135deg,#1B3A8F,#0A0A1A);font-size:5rem;display:flex;align-items:center;justify-content:center;">🪔</div>
+          <div class="featured-article__body">
+            <div class="featured-label">⭐ Editor's Pick</div>
+            <h2 class="featured-article__title" id="featured-heading">Why the Purity of Lamp Oil Matters in Your Puja Room</h2>
+            <p class="featured-article__excerpt">Paraffin-based lamp oils release PM2.5 particulates, benzene, and toluene when burned in enclosed spaces — levels that can exceed safe indoor air quality thresholds with just minutes of burning. We explore the sattvic case for pure vegetable-oil lamps, what the Charaka Samhita says about sacred flame, and the combustion chemistry behind why ancient texts prescribed sesame and groundnut oil — not paraffin.</p>
+            <div class="featured-article__meta">
+              <span class="meta-tag"><span aria-hidden="true">📖</span> 6 min read</span>
+              <span class="meta-tag"><span aria-hidden="true">🏷️</span> Ritual &amp; Puja</span>
+              <span class="meta-tag"><span aria-hidden="true">🪔</span> Deepam Oil</span>
+            </div>
+            <a href="#" class="btn btn--primary">Read Article →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ARTICLE GRID — 12 ARTICLES ===== -->
+    <section class="section" style="background:var(--color-cream)" aria-labelledby="articles-heading">
+      <div class="container">
+        <h2 id="articles-heading" class="sr-only">All Articles</h2>
+
+        <div class="article-grid" id="article-grid">
+
+          <!-- 1. Oil Pulling -->
+          <article class="article-card reveal" data-category="wellness">
+            <div class="article-card__image">
+              <div style="width:100%;height:100%;background:linear-gradient(135deg,#E8F5E9,#C8E6C9);display:flex;align-items:center;justify-content:center;font-size:3.5rem">🧴</div>
+              <div class="article-card__meta">
+                <span class="badge badge--gold">Wellness</span>
+                <span class="badge badge--green">📖 4 min</span>
+              </div>
+            </div>
+            <div class="article-card__body">
+              <p class="article-card__tag">Sesame Oil · Ayurveda · Oral Health</p>
+              <h3 class="article-card__title">Oil Pulling with Cold-Pressed Sesame Oil: What Science and Ayurveda Agree On</h3>
+              <p class="article-card__excerpt">The ancient Kavala Graha practice of oil pulling has surprising modern research backing it. The specific antioxidant profile of cold-pressed sesame oil — sesamol, sesamin, sesamolin — is central to why the Ayurvedic prescription specifies this oil, and not others.</p>
+              <div class="article-card__footer"><a href="#" class="article-card__link">Read Article →</a></div>
+            </div>
+          </article>
+
+          <!-- 2. Argemone Testing -->
+          <article class="article-card reveal reveal-delay-1" data-category="purity">
+            <div class="article-card__image">
+              <div style="width:100%;height:100%;background:linear-gradient(135deg,#FFF3E0,#FFCC80);display:flex;align-items:center;justify-content:center;font-size:3.5rem">🔬</div>
+              <div class="article-card__meta">
+                <span class="badge badge--gold">Purity</span>
+                <span class="badge badge--green">📖 7 min</span>
+              </div>
+            </div>
+            <div class="article-card__body">
+              <p class="article-card__tag">Mustard Oil · Safety · Testing</p>
+              <h3 class="article-card__title">Argemone Oil Adulterant: How to Test Your Mustard Oil at Home</h3>
+              <p class="article-card__excerpt">Argemone oil causes epidemic dropsy — a life-threatening condition. It's also one of the most common adulterants in mustard oil. We explain the nitric acid test you can perform in 5 minutes with materials from any pharmacy.</p>
+              <div class="article-card__footer"><a href="#" class="article-card__link">Read Article →</a></div>
+            </div>
+          </article>
+
+          <!-- 3. MUFA vs PUFA -->
+          <article class="article-card reveal reveal-delay-2" data-category="nutrition">
+            <div class="article-card__image">
+              <div style="width:100%;height:100%;background:linear-gradient(135deg,#FCE4EC,#F48FB1);display:flex;align-items:center;justify-content:center;font-size:3.5rem">❤️</div>
+              <div class="article-card__meta">
+                <span class="badge badge--gold">Nutrition</span>
+                <span class="badge badge--green">📖 5 min</span>
+              </div>
+            </div>
+            <div class="article-card__body">
+              <p class="article-card__tag">Groundnut Oil · Heart Health · Fatty Acids</p>
+              <h3 class="article-card__title">MUFA vs. PUFA: Why the Fatty Acid Ratio in Cold-Pressed Oils Matters</h3>
+              <p class="article-card__excerpt">Not all fats are equal. Cold-pressed groundnut oil's 46% MUFA content — similar to olive oil — makes it one of the best daily cooking oils for cardiovascular health. We break down what MUFA and PUFA actually mean for your body.</p>
+              <div class="article-card__footer"><a href="#" class="article-card__link">Read Article →</a></div>
+            </div>
+          </article>
+
+          <!-- 4. Abhyanga -->
+          <article class="article-card reveal" data-category="wellness">
+            <div class="article-card__image">
+              <div style="width:100%;height:100%;background:linear-gradient(135deg,#F3E5F5,#CE93D8);display:flex;align-items:center;justify-content:center;font-size:3.5rem">🧘</div>
+              <div class="article-card__meta">
+                <span class="badge badge--gold">Wellness</span>
+                <span class="badge badge--green">📖 8 min</span>
+              </div>
+            </div>
+            <div class="article-card__body">
+              <p class="article-card__tag">Sesame Oil · Ayurveda · Self-Care</p>
+              <h3 class="article-card__title">Abhyanga: The Ayurvedic Daily Self-Massage Practice — and Why Oil Quality is Non-Negotiable</h3>
+              <p class="article-card__excerpt">Abhyanga — daily self-massage with warm oil — is one of the most researched Ayurvedic practices. Clinical studies show benefits for sleep, circulation, and cortisol levels. But the studies used traditional cold-pressed sesame oil, not refined commercial oil. The distinction matters.</p>
+              <div class="article-card__footer"><a href="#" class="article-card__link">Read Article →</a></div>
+            </div>
+          </article>
+
+          <!-- 5. 6-Step Refining -->
+          <article class="article-card reveal reveal-delay-1" data-category="purity">
+            <div class="article-card__image">
+              <div style="width:100%;height:100%;background:linear-gradient(135deg,#E3F2FD,#90CAF9);display:flex;align-items:center;justify-content:center;font-size:3.5rem">⚗️</div>
+              <div class="article-card__meta">
+                <span class="badge badge--gold">Purity</span>
+                <span class="badge badge--green">📖 9 min</span>
+              </div>
+            </div>
+            <div class="article-card__body">
+              <p class="article-card__tag">All Oils · Refining Process · Industry</p>
+              <h3 class="article-card__title">The 6-Step Refining Process: What Happens to Vegetable Oil Before the Supermarket Shelf</h3>
+              <p class="article-card__excerpt">Degumming, neutralisation, bleaching, winterisation, deodorisation — each step removes something valuable. A plain-language breakdown of what industrial oil processing actually does, and what you lose at each stage.</p>
+              <div class="article-card__footer"><a href="#" class="article-card__link">Read Article →</a></div>
+            </div>
+          </article>
+
+          <!-- 6. MCT vs LCT -->
+          <article class="article-card reveal reveal-delay-2" data-category="nutrition">
+            <div class="article-card__image">
+              <div style="width:100%;height:100%;background:linear-gradient(135deg,#E8F5E9,#A5D6A7);display:flex;align-items:center;justify-content:center;font-size:3.5rem">🥥</div>
+              <div class="article-card__meta">
+                <span class="badge badge--gold">Nutrition</span>
+                <span class="badge badge--green">📖 6 min</span>
+              </div>
+            </div>
+            <div class="article-card__body">
+              <p class="article-card__tag">Coconut Oil · MCTs · Metabolism</p>
+              <h3 class="article-card__title">MCTs vs. LCTs: Why Coconut Oil's Saturated Fats Behave Differently in the Body</h3>
+              <p class="article-card__excerpt">The saturated fats in coconut oil are not the same as those in meat and dairy. Medium-chain triglycerides are metabolised directly by the liver as energy — not stored as fat. We explain the science behind this distinction.</p>
+              <div class="article-card__footer"><a href="#" class="article-card__link">Read Article →</a></div>
+            </div>
+          </article>
+
+          <!-- 7. Cold-Pressed vs Expeller-Pressed -->
+          <article class="article-card reveal" data-category="purity">
+            <div class="article-card__image">
+              <div style="width:100%;height:100%;background:linear-gradient(135deg,#FFF9C4,#FFF176);display:flex;align-items:center;justify-content:center;font-size:3.5rem">⚙️</div>
+              <div class="article-card__meta">
+                <span class="badge badge--gold">Purity</span>
+                <span class="badge badge--green">📖 5 min</span>
+              </div>
+            </div>
+            <div class="article-card__body">
+              <p class="article-card__tag">All Oils · Extraction Methods · Buyer's Guide</p>
+              <h3 class="article-card__title">Cold-Pressed vs. Expeller-Pressed vs. Solvent-Extracted: A Complete Guide</h3>
+              <p class="article-card__excerpt">Not all "natural" oils are the same. Expeller-pressed can still generate heat above 60°C. Solvent-extracted oils leave hexane residues. Only cold-pressing (below 37°C) preserves the full nutritional and flavour profile of the seed.</p>
+              <div class="article-card__footer"><a href="#" class="article-card__link">Read Article →</a></div>
+            </div>
+          </article>
+
+          <!-- 8. How to Read an Oil Label -->
+          <article class="article-card reveal reveal-delay-1" data-category="purity">
+            <div class="article-card__image">
+              <div style="width:100%;height:100%;background:linear-gradient(135deg,#ECEFF1,#B0BEC5);display:flex;align-items:center;justify-content:center;font-size:3.5rem">🏷️</div>
+              <div class="article-card__meta">
+                <span class="badge badge--gold">Purity</span>
+                <span class="badge badge--green">📖 6 min</span>
+              </div>
+            </div>
+            <div class="article-card__body">
+              <p class="article-card__tag">All Oils · Label Reading · Consumer Guide</p>
+              <h3 class="article-card__title">How to Read an Oil Label: 7 Things to Check Before You Buy</h3>
+              <p class="article-card__excerpt">"Natural," "pure," "cold-pressed," "unrefined" — these words are used loosely on oil labels, sometimes correctly, often misleadingly. This guide tells you exactly what to look for, what to ignore, and what should concern you.</p>
+              <div class="article-card__footer"><a href="#" class="article-card__link">Read Article →</a></div>
+            </div>
+          </article>
+
+          <!-- 9. Mustard Oil History -->
+          <article class="article-card reveal reveal-delay-2" data-category="purity">
+            <div class="article-card__image">
+              <div style="width:100%;height:100%;background:linear-gradient(135deg,#FFF8E1,#FFE082);display:flex;align-items:center;justify-content:center;font-size:3.5rem">📜</div>
+              <div class="article-card__meta">
+                <span class="badge badge--gold">History</span>
+                <span class="badge badge--green">📖 10 min</span>
+              </div>
+            </div>
+            <div class="article-card__body">
+              <p class="article-card__tag">Mustard Oil · Food Policy · History</p>
+              <h3 class="article-card__title">Why India's Cooking Oil Changed in the 1970s — and What We Lost</h3>
+              <p class="article-card__excerpt">Before the 1970s Green Revolution, every Indian household cooked in cold-pressed regional oils. Then vegetable oil policy shifted, refined oils became cheap and ubiquitous, and traditional pressing almost disappeared. A history of how we got here — and why cold-pressing is returning.</p>
+              <div class="article-card__footer"><a href="#" class="article-card__link">Read Article →</a></div>
+            </div>
+          </article>
+
+          <!-- 10. Sesame Oil for Skin -->
+          <article class="article-card reveal" data-category="wellness">
+            <div class="article-card__image">
+              <div style="width:100%;height:100%;background:linear-gradient(135deg,#FBE9E7,#FFAB91);display:flex;align-items:center;justify-content:center;font-size:3.5rem">✨</div>
+              <div class="article-card__meta">
+                <span class="badge badge--gold">Wellness</span>
+                <span class="badge badge--green">📖 5 min</span>
+              </div>
+            </div>
+            <div class="article-card__body">
+              <p class="article-card__tag">Sesame Oil · Skin Care · Traditional Remedies</p>
+              <h3 class="article-card__title">Sesame Oil for Skin: What the Research Actually Says</h3>
+              <p class="article-card__excerpt">Cold-pressed sesame oil is one of the few traditional ingredients where modern dermatological research largely confirms ancient claims. Its sesamol content, UV resistance, and anti-inflammatory properties have all been studied. Here's what's proven, what's promising, and what's myth.</p>
+              <div class="article-card__footer"><a href="#" class="article-card__link">Read Article →</a></div>
+            </div>
+          </article>
+
+          <!-- 11. Smoke Point Myth-Busting -->
+          <article class="article-card reveal reveal-delay-1" data-category="cooking">
+            <div class="article-card__image">
+              <div style="width:100%;height:100%;background:linear-gradient(135deg,#FFEBEE,#EF9A9A);display:flex;align-items:center;justify-content:center;font-size:3.5rem">🌡️</div>
+              <div class="article-card__meta">
+                <span class="badge badge--gold">Cooking</span>
+                <span class="badge badge--green">📖 7 min</span>
+              </div>
+            </div>
+            <div class="article-card__body">
+              <p class="article-card__tag">All Oils · Smoke Point · Cooking Science</p>
+              <h3 class="article-card__title">Smoke Point: The Most Misunderstood Number in Cooking</h3>
+              <p class="article-card__excerpt">Most home cooks have been told that a higher smoke point always means a healthier, more stable oil. This is partially true but significantly oversimplified. The total polar compound content, the refining level, and the antioxidant profile all matter more than the single smoke point number.</p>
+              <div class="article-card__footer"><a href="#" class="article-card__link">Read Article →</a></div>
+            </div>
+          </article>
+
+          <!-- 12. Coconut Oil & Thyroid -->
+          <article class="article-card reveal reveal-delay-2" data-category="nutrition">
+            <div class="article-card__image">
+              <div style="width:100%;height:100%;background:linear-gradient(135deg,#E8F5E9,#C8E6C9);display:flex;align-items:center;justify-content:center;font-size:3.5rem">🧬</div>
+              <div class="article-card__meta">
+                <span class="badge badge--gold">Nutrition</span>
+                <span class="badge badge--green">📖 6 min</span>
+              </div>
+            </div>
+            <div class="article-card__body">
+              <p class="article-card__tag">Coconut Oil · Thyroid · Health Claims</p>
+              <h3 class="article-card__title">Coconut Oil and Thyroid Function: Separating Fact from Viral Myth</h3>
+              <p class="article-card__excerpt">Coconut oil has been marketed aggressively as a thyroid treatment, a weight-loss miracle, and a cure-all. Some of these claims have merit; most are exaggerated. We review the actual clinical evidence and give you an honest picture of what coconut oil can — and cannot — do.</p>
+              <div class="article-card__footer"><a href="#" class="article-card__link">Read Article →</a></div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== OIL 101 — EDUCATIONAL RESOURCE SECTION ===== -->
+    <section class="section oil-101-section" aria-labelledby="oil101-heading">
+      <div class="container">
+        <div class="section-header" style="text-align:center;margin-bottom:var(--space-12)">
+          <p class="section-label">Quick Reference</p>
+          <h2 id="oil101-heading">Oil 101 — Everything You Need to Know at a Glance</h2>
+          <p style="max-width:560px;margin-inline:auto;color:var(--color-muted)">Quick-reference cards for the most common questions about cooking with cold-pressed oils. No jargon, no filler — just the facts.</p>
+        </div>
+
+        <div class="oil101-grid">
+
+          <!-- Smoke Point Guide -->
+          <div class="oil101-card">
+            <div class="oil101-card__icon" aria-hidden="true">🌡️</div>
+            <h3 class="oil101-card__title">Smoke Point Guide</h3>
+            <p class="oil101-card__intro">At what temperature each Bharat Oil begins to smoke — and what cooking methods that suits.</p>
+            <table class="oil101-table">
+              <thead><tr><th>Oil</th><th>Smoke Point</th><th>Best For</th></tr></thead>
+              <tbody>
+                <tr><td>🥜 Groundnut</td><td>~180°C</td><td>Deep frying, high-heat</td></tr>
+                <tr><td>🌼 Mustard</td><td>~160°C</td><td>Tempering, frying (after smoking)</td></tr>
+                <tr><td>🥥 Coconut</td><td>~175°C</td><td>Sautéing, medium heat</td></tr>
+                <tr><td>✨ Sesame</td><td>~160°C</td><td>Low heat, finishing drizzle</td></tr>
+              </tbody>
+            </table>
+            <p class="oil101-card__note">Note: Cold-pressed oils have slightly lower smoke points than refined — but their antioxidant content makes them more heat-stable at those temperatures than their smoke point alone suggests.</p>
+          </div>
+
+          <!-- Fatty Acids at a Glance -->
+          <div class="oil101-card">
+            <div class="oil101-card__icon" aria-hidden="true">🔬</div>
+            <h3 class="oil101-card__title">Fatty Acid Profiles</h3>
+            <p class="oil101-card__intro">The fat composition that determines nutritional character, flavour, and heat stability.</p>
+            <table class="oil101-table">
+              <thead><tr><th>Oil</th><th>MUFA</th><th>PUFA</th><th>Saturated</th></tr></thead>
+              <tbody>
+                <tr><td>🥜 Groundnut</td><td>46%</td><td>32%</td><td>17%</td></tr>
+                <tr><td>🌼 Mustard</td><td>60%</td><td>21%</td><td>12%</td></tr>
+                <tr><td>🥥 Coconut</td><td>6%</td><td>2%</td><td>92%</td></tr>
+                <tr><td>✨ Sesame</td><td>40%</td><td>42%</td><td>14%</td></tr>
+              </tbody>
+            </table>
+            <p class="oil101-card__note">MUFA = monounsaturated (heart-protective). PUFA = polyunsaturated (essential fatty acids). Coconut oil's saturated fats are primarily MCTs — metabolised differently to animal saturated fats.</p>
+          </div>
+
+          <!-- Oil Substitution Guide -->
+          <div class="oil101-card">
+            <div class="oil101-card__icon" aria-hidden="true">🔄</div>
+            <h3 class="oil101-card__title">Oil Substitution Guide</h3>
+            <p class="oil101-card__intro">What to use when a recipe calls for an oil you don't have — and what the trade-off is.</p>
+            <div class="oil101-substitution">
+              <div class="substitution-row">
+                <span class="sub-from">Refined vegetable oil →</span>
+                <span class="sub-arrow">→</span>
+                <span class="sub-to">Groundnut Oil</span>
+                <span class="sub-note">Direct swap. Same heat stability, better flavour, better nutrition.</span>
+              </div>
+              <div class="substitution-row">
+                <span class="sub-from">Olive oil (cooking) →</span>
+                <span class="sub-arrow">→</span>
+                <span class="sub-to">Groundnut Oil</span>
+                <span class="sub-note">Better heat stability. More neutral flavour for Indian cooking.</span>
+              </div>
+              <div class="substitution-row">
+                <span class="sub-from">Toasted sesame oil →</span>
+                <span class="sub-arrow">→</span>
+                <span class="sub-to">Sesame Oil</span>
+                <span class="sub-note">Cold-pressed sesame oil has deeper flavour. Use slightly less.</span>
+              </div>
+              <div class="substitution-row">
+                <span class="sub-from">Refined coconut oil →</span>
+                <span class="sub-arrow">→</span>
+                <span class="sub-to">Coconut Oil</span>
+                <span class="sub-note">Same cooking properties. Cold-pressed version retains coconut aroma.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Purity Checklist -->
+          <div class="oil101-card">
+            <div class="oil101-card__icon" aria-hidden="true">✅</div>
+            <h3 class="oil101-card__title">Purity Checklist</h3>
+            <p class="oil101-card__intro">How to verify that an oil is genuinely cold-pressed and unadulterated — before you buy it and after.</p>
+            <div class="purity-checklist">
+              <div class="checklist-item checklist-item--yes">
+                <span class="checklist-item__icon">✓</span>
+                <div><strong>Natural sediment at the bottom</strong> — fine particles settle in cold-pressed oil. This is a good sign, not a defect.</div>
+              </div>
+              <div class="checklist-item checklist-item--yes">
+                <span class="checklist-item__icon">✓</span>
+                <div><strong>Distinctive natural smell</strong> — mustard oil should be pungent, sesame should be aromatic, coconut should smell coconut-y.</div>
+              </div>
+              <div class="checklist-item checklist-item--yes">
+                <span class="checklist-item__icon">✓</span>
+                <div><strong>Cloudiness in cold weather</strong> — groundnut and coconut oil will cloud or solidify below certain temperatures. This is natural and reversible.</div>
+              </div>
+              <div class="checklist-item checklist-item--no">
+                <span class="checklist-item__icon">✗</span>
+                <div><strong>Perfectly clear and odourless</strong> — if an oil has no smell and perfect clarity, it has been refined and deodorised. Not cold-pressed.</div>
+              </div>
+              <div class="checklist-item checklist-item--no">
+                <span class="checklist-item__icon">✗</span>
+                <div><strong>Labels saying "natural flavour added"</strong> — genuine cold-pressed oil needs no added flavour. This phrase signals deodorised oil with synthetic aroma re-added.</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== RITUAL CLUSTER ===== -->
+    <section class="ritual-cluster" aria-labelledby="ritual-heading">
+      <div class="container">
+        <div class="section-header" style="margin-bottom:var(--space-12)">
+          <p class="section-label">Ritual &amp; Puja</p>
+          <h2 id="ritual-heading">The Sacred Flame — A Knowledge Cluster</h2>
+          <p>Ancient wisdom and modern science both speak to the importance of what you burn in your puja room. These articles explore the intersection of tradition and combustion chemistry.</p>
+        </div>
+
+        <div class="ritual-grid">
+          <div class="ritual-article">
+            <div class="ritual-article__icon">🛕</div>
+            <h3>Deepam Oil: The Combustion Chemistry Behind a Clean Flame</h3>
+            <p>Why vegetable-based lamp oils produce significantly less particulate matter than paraffin — and what this means for daily devotional practice in enclosed home puja rooms.</p>
+            <a href="#" class="article-card__link">Read Article →</a>
+          </div>
+          <div class="ritual-article">
+            <div class="ritual-article__icon">📜</div>
+            <h3>What the Vedic Texts Say About Lamp Oil Quality</h3>
+            <p>A curated reading of the Charaka Samhita, Ashtanga Hridaya, and Grihya Sutras on the prescribed oils for sacred lamps — and how these align precisely with modern combustion chemistry.</p>
+            <a href="#" class="article-card__link">Read Article →</a>
+          </div>
+          <div class="ritual-article">
+            <div class="ritual-article__icon">🌙</div>
+            <h3>Diwali Without Indoor Air Pollution: A Practical Guide</h3>
+            <p>How to celebrate with oil lamps across your home while protecting indoor air quality — choosing the right oil, wick material, and lamp type for minimal particulate output and maximum tradition.</p>
+            <a href="#" class="article-card__link">Read Article →</a>
+          </div>
+          <div class="ritual-article">
+            <div class="ritual-article__icon">🪔</div>
+            <h3>Karthigai Deepam: The Festival of Lights and the Oil That Fuels It</h3>
+            <p>The Tamil Nadu festival of Karthigai Deepam involves lighting thousands of lamps simultaneously. This article explores the traditional oils prescribed, and why purity matters most at scale.</p>
+            <a href="#" class="article-card__link">Read Article →</a>
+          </div>
+        </div>
+
+        <!-- Extended Ritual articles -->
+        <div class="ritual-grid" style="margin-top:var(--space-8)">
+          <div class="ritual-article">
+            <div class="ritual-article__icon">🌺</div>
+            <h3>Navaratri and the Sattvic Kitchen</h3>
+            <p>Navaratri fasting prescribes sattvic eating — pure, light, and free of stimulants. What Ayurveda says about which oils qualify as sattvic, and how cold-pressed oils fit this framework.</p>
+            <a href="#" class="article-card__link">Read Article →</a>
+          </div>
+          <div class="ritual-article">
+            <div class="ritual-article__icon">🏛️</div>
+            <h3>Temple Lamp Traditions Across India</h3>
+            <p>From the coconut oil lamps of Kerala temples to the sesame oil diyas of North India — a survey of regional lamp oil traditions and the ritual reasoning behind each prescription.</p>
+            <a href="#" class="article-card__link">Read Article →</a>
+          </div>
+          <div class="ritual-article">
+            <div class="ritual-article__icon">🕉️</div>
+            <h3>Oil in Vedic Ritual: Beyond the Lamp</h3>
+            <p>Sesame oil in tarpan, groundnut oil in havan — oils appear throughout Vedic ritual practice, each with specific prescribed purposes. An introduction to the ritual uses of pure oils beyond the puja lamp.</p>
+            <a href="#" class="article-card__link">Read Article →</a>
+          </div>
+          <div class="ritual-article">
+            <div class="ritual-article__icon">🌿</div>
+            <h3>Panchamruta: The Five Sacred Offerings</h3>
+            <p>Panchamruta — milk, curd, honey, sugar, and ghee — is used in abhishek across traditions. We explore the Ayurvedic and ritual logic behind the five-part offering and the quality standards implied.</p>
+            <a href="#" class="article-card__link">Read Article →</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== DEEP DIVE SERIES ===== -->
+    <section class="section" style="background:var(--color-white)" aria-labelledby="deep-dive-heading">
+      <div class="container">
+        <div class="section-header" style="text-align:center;margin-bottom:var(--space-12)">
+          <p class="section-label">Long Reads</p>
+          <h2 id="deep-dive-heading">Deep Dive Series</h2>
+          <p style="max-width:520px;margin-inline:auto;color:var(--color-muted)">Comprehensive guides for readers who want to go beyond the basics — the chemistry, the history, and the science behind cold-pressed oils.</p>
+        </div>
+
+        <div class="deep-dive-list">
+
+          <a href="#" class="deep-dive-item">
+            <div class="deep-dive-item__number">01</div>
+            <div class="deep-dive-item__body">
+              <p class="deep-dive-item__tag">Groundnut Oil · 15 min read</p>
+              <h3 class="deep-dive-item__title">The Complete Guide to Cooking with Cold-Pressed Groundnut Oil</h3>
+              <p class="deep-dive-item__desc">Smoke point, fatty acid profile, storage, regional uses across India, frying guide, and the scientific case for groundnut oil as the best all-purpose Indian cooking oil.</p>
+            </div>
+            <div class="deep-dive-item__arrow" aria-hidden="true">→</div>
+          </a>
+
+          <a href="#" class="deep-dive-item">
+            <div class="deep-dive-item__number">02</div>
+            <div class="deep-dive-item__body">
+              <p class="deep-dive-item__tag">Mustard Oil · 18 min read</p>
+              <h3 class="deep-dive-item__title">Mustard Oil: The Most Misunderstood Oil in Indian Cooking</h3>
+              <p class="deep-dive-item__desc">The erucic acid controversy, the US import ban, the difference between hot and cold climates, the pickling science, the Ayurvedic prescriptions, and why Bengal never gave it up.</p>
+            </div>
+            <div class="deep-dive-item__arrow" aria-hidden="true">→</div>
+          </a>
+
+          <a href="#" class="deep-dive-item">
+            <div class="deep-dive-item__number">03</div>
+            <div class="deep-dive-item__body">
+              <p class="deep-dive-item__tag">Sesame Oil · 12 min read</p>
+              <h3 class="deep-dive-item__title">Sesame Oil in India: A 5,000-Year History from the Indus Valley to Your Kitchen</h3>
+              <p class="deep-dive-item__desc">Archaeological evidence, Ayurvedic texts, regional cooking traditions, skin care research, and the modern cold-pressing revival — a complete history of til taila.</p>
+            </div>
+            <div class="deep-dive-item__arrow" aria-hidden="true">→</div>
+          </a>
+
+          <a href="#" class="deep-dive-item">
+            <div class="deep-dive-item__number">04</div>
+            <div class="deep-dive-item__body">
+              <p class="deep-dive-item__tag">Coconut Oil · 14 min read</p>
+              <h3 class="deep-dive-item__title">The Coconut Oil Wars: Cutting Through 50 Years of Contradictory Health Claims</h3>
+              <p class="deep-dive-item__desc">How coconut oil went from villain to superfood to somewhere in between — a chronological account of the science, the marketing, the politics, and what we can actually conclude.</p>
+            </div>
+            <div class="deep-dive-item__arrow" aria-hidden="true">→</div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER STRIP -->
+    <section class="newsletter-strip" aria-labelledby="newsletter-heading">
+      <div class="container">
+        <div class="newsletter-strip__inner">
+          <div class="newsletter-strip__text">
+            <p class="section-label" style="color:var(--color-gold-light)">Monthly Reading List</p>
+            <h2 id="newsletter-heading">Get New Articles in Your Inbox</h2>
+            <p>One email a month — a new article, an oil fact you didn't know, and a seasonal recipe. Science-backed, jargon-free. Unsubscribe anytime.</p>
+          </div>
+          <form class="newsletter-form" action="mailto:info@bagason.com" method="GET" onsubmit="return false;">
+            <div class="newsletter-form__row">
+              <input type="email" class="newsletter-form__input" placeholder="your@email.com" aria-label="Email address">
+              <button type="submit" class="btn btn--where-to-buy">Subscribe →</button>
+            </div>
+            <p class="newsletter-form__note">No spam. One email per month. Unsubscribe anytime.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-brand__logo"><img src="Bharat - brand logo .png" alt="Bharat Oils" class="footer-logo__img"></a>
+          <p class="footer-brand__desc">100% pure cold-pressed oils — zero chemicals, zero compromise.</p>
+          <div class="footer-certifications"><span class="footer-cert">FSSAI Compliant</span><span class="footer-cert">Zero Additives</span><span class="footer-cert">Cold-Pressed</span></div>
+        </div>
+        <nav aria-label="Our Oils"><p class="footer-col__title">Our Oils</p>
+          <ul class="footer-col__links" role="list">
+            <li><a href="products/groundnut-oil.html">Groundnut Oil</a></li>
+            <li><a href="products/sesame-oil.html">Sesame Oil</a></li>
+            <li><a href="products/mustard-oil.html">Mustard Oil</a></li>
+            <li><a href="products/coconut-oil.html">Coconut Oil</a></li>
+            <li><a href="products/deepam-oil.html">Deepam Oil</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Company"><p class="footer-col__title">Company</p>
+          <ul class="footer-col__links" role="list">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="blog.html">Wellness Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div><p class="footer-col__title">Get in Touch</p>
+          <p style="font-size:var(--text-sm);margin-bottom:var(--space-4)"><a href="mailto:info@bagason.com" style="color:var(--color-gold-light)">info@bagason.com</a></p>
+          <a href="https://wa.me/971552262980" class="footer-whatsapp" target="_blank" rel="noopener noreferrer"><span>💬</span> WhatsApp Us</a>
+        </div>
+      </div>
+      <div class="site-footer__bottom">
+        <p class="footer-copyright">© 2026 Bharat Oils. All rights reserved.</p>
+        <nav class="footer-legal"><a href="#">Privacy Policy</a><a href="#">Terms</a></nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Single-dimension article filter
+    document.querySelectorAll('.filter-btn[data-filter]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-btn[data-filter]').forEach(b => {
+          b.classList.remove('active');
+          b.setAttribute('aria-pressed', 'false');
+        });
+        btn.classList.add('active');
+        btn.setAttribute('aria-pressed', 'true');
+
+        const filter = btn.dataset.filter;
+        document.querySelectorAll('#article-grid .article-card').forEach(card => {
+          if (filter === 'all' || card.dataset.category === filter) {
+            card.style.display = '';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>

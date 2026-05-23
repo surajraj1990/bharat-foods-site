@@ -1,0 +1,14 @@
+# Claude Code session settings (machine-specific, contains author paths)
+.claude/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Editor swap files
+*.swp
+*.swo
+*~
+
+# Logs
+*.log

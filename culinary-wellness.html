@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Culinary & Wellness Journal — Bharat Oils | Recipes, Ayurveda & Ritual</title>
+  <meta name="description" content="Recipes using cold-pressed mustard, groundnut, and sesame oils. Ayurvedic wellness guides. Deepam oil ritual articles. Pure knowledge, zero keyword stuffing.">
+  <meta property="og:title" content="Culinary & Wellness Journal — Bharat Oils">
+  <meta property="og:type" content="website">
+
+  <!--
+    ODOO QWeb PORT NOTE:
+    This page maps to website_blog.blog_post_short.
+    Article schema: inject per-post if tagged 'recipe' → Recipe schema, else → Article schema.
+    Recipe cards: pull thumbnail (4:3), cooking_time custom field, reading_time computed field.
+  -->
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages/culinary.css">
+</head>
+<body>
+
+  <nav class="site-nav site-nav--solid" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="nav-logo" aria-label="Bharat Oils — Go For Natural"><img src="Bharat - brand logo .png" alt="Bharat Oils — Go For Natural" class="nav-logo__img"></a>
+      <ul class="nav-links" role="list">
+        <li><a href="catalog.html">Our Oils</a></li>
+        <li><a href="brand-story.html">Our Story</a></li>
+        <li><a href="culinary-wellness.html" class="active">Recipes &amp; Wellness</a></li>
+        <li><a href="contact.html">Where to Buy</a></li>
+      </ul>
+      <div class="nav-cta"><a href="contact.html" class="btn btn--primary btn--sm">Where to Buy</a></div>
+      <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <main>
+
+    <header class="page-header">
+      <div class="container">
+        <p class="section-label">From Our Kitchen to Yours</p>
+        <h1>Culinary &amp; Wellness Journal</h1>
+        <p>Recipes, Ayurvedic wellness guides, and ritual knowledge — all grounded in the chemistry and culture of pure cold-pressed oils.</p>
+      </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <section class="section" aria-labelledby="journal-heading">
+      <div class="container">
+
+        <!-- FILTER BAR -->
+        <nav class="filter-bar" aria-label="Content filters" role="navigation">
+          <span style="font-size:var(--text-sm);font-weight:600;color:var(--color-muted);margin-right:var(--space-2)">Filter:</span>
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="recipe">Recipes</button>
+          <button class="filter-btn" data-filter="wellness">Wellness</button>
+          <button class="filter-btn" data-filter="ritual">Ritual &amp; Puja</button>
+          <button class="filter-btn" data-filter="mustard">Mustard Oil</button>
+          <button class="filter-btn" data-filter="sesame">Sesame Oil</button>
+          <button class="filter-btn" data-filter="groundnut">Groundnut Oil</button>
+        </nav>
+
+        <!-- FEATURED ARTICLE -->
+        <article class="featured-article reveal" aria-label="Featured article">
+
+          <!-- Article Schema placeholder for Odoo QWeb port -->
+          <script type="application/ld+json">
+          {
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "The Complete Guide to Cooking with Cold-Pressed Oils",
+            "author": { "@type": "Organization", "name": "Bharat Oils" },
+            "publisher": { "@type": "Organization", "name": "Bharat Oils" },
+            "description": "A comprehensive guide to smoke points, heat stability, and nutritional retention across all four Bharat Oils cold-pressed varieties."
+          }
+          </script>
+
+          <div class="featured-article__image" aria-hidden="true">
+            <span style="font-size:6rem">🍳</span>
+          </div>
+          <div class="featured-article__body">
+            <p class="featured-label">✦ Featured Guide</p>
+            <h2 id="journal-heading" class="featured-article__title">The Complete Guide to Cooking with Cold-Pressed Oils</h2>
+            <p class="featured-article__excerpt">
+              Smoke points, heat stability, nutrient retention, and which Bharat Oil to reach for — depending on what you're cooking. A practical, science-grounded kitchen reference from the people who press your oils.
+            </p>
+            <div class="featured-article__meta">
+              <span class="meta-tag"><span aria-hidden="true">📖</span> 12 min read</span>
+              <span class="meta-tag"><span aria-hidden="true">🌿</span> Wellness &amp; Cooking</span>
+              <span class="meta-tag"><span aria-hidden="true">🗓</span> May 2025</span>
+            </div>
+            <a href="#" class="btn btn--primary">Read the Guide</a>
+          </div>
+        </article>
+
+        <!-- ARTICLE GRID -->
+        <div class="article-grid">
+
+          <!-- Recipe: Sarson Ka Saag -->
+          <article class="article-card reveal" data-tag="recipe mustard">
+            <script type="application/ld+json">
+            {
+              "@context": "https://schema.org",
+              "@type": "Recipe",
+              "name": "Authentic Sarson Ka Saag with Cold-Pressed Mustard Oil",
+              "author": { "@type": "Organization", "name": "Bharat Oils" },
+              "cookTime": "PT40M",
+              "description": "Traditional Punjabi mustard greens cooked in pure cold-pressed mustard oil."
+            }
+            </script>
+            <div class="article-card__image">
+              <div style="width:100%;height:100%;background:linear-gradient(135deg,var(--color-gold-faint),var(--color-cream-dark));display:flex;align-items:center;justify-content:center;font-size:4rem" aria-hidden="true">🥬</div>
+              <div class="article-card__meta">
+                <span class="badge badge--gold">Recipe</span>
+                <span class="badge badge--green">⏱ 40 min</span>
+              </div>
+            </div>
+            <div class="article-card__body">
+              <p class="article-card__tag">Mustard Oil</p>
+              <h3 class="article-card__title">Authentic Sarson Ka Saag with Cold-Pressed Mustard Oil</h3>
+              <p class="article-card__excerpt">Why refined mustard oil simply cannot replicate the flavour of kachi ghani in this Punjabi classic — and the chemistry behind it.</p>
+              <div class="article-card__footer">
+                <a href="#" class="article-card__link">Read Recipe <span aria-hidden="true">→</span></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Wellness: Oil Pulling -->
+          <article class="article-card reveal reveal-delay-1" data-tag="wellness sesame">
+            <div class="article-card__image">
+              <div style="width:100%;height:100%;background:linear-gradient(135deg,#E8F5E9,#C8E6C9);display:flex;align-items:center;justify-content:center;font-size:4rem" aria-hidden="true">🦷</div>
+              <div class="article-card__meta">
+                <span class="badge badge--gold">Wellness</span>
+                <span class="badge badge--green">📖 6 min</span>
+              </div>
+            </div>
+            <div class="article-card__body">
+              <p class="article-card__tag">Sesame Oil</p>
+              <h3 class="article-card__title">Oil Pulling with Cold-Pressed Sesame Oil: What Science and Ayurveda Agree On</h3>
+              <p class="article-card__excerpt">Clinical evidence on Kavala Graha and why cold-pressed, unrefined sesame oil is the only correct medium for this practice.</p>
+              <div class="article-card__footer">
+                <a href="#" class="article-card__link">Read Article <span aria-hidden="true">→</span></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Recipe: Groundnut Chutney -->
+          <article class="article-card reveal reveal-delay-2" data-tag="recipe groundnut">
+            <script type="application/ld+json">
+            {
+              "@context": "https://schema.org",
+              "@type": "Recipe",
+              "name": "South Indian Groundnut Chutney in Cold-Pressed Groundnut Oil",
+              "author": { "@type": "Organization", "name": "Bharat Oils" },
+              "cookTime": "PT15M"
+            }
+            </script>
+            <div class="article-card__image">
+              <div style="width:100%;height:100%;background:linear-gradient(135deg,#FFF3E0,#FFE0B2);display:flex;align-items:center;justify-content:center;font-size:4rem" aria-hidden="true">🥜</div>
+              <div class="article-card__meta">
+                <span class="badge badge--gold">Recipe</span>
+                <span class="badge badge--green">⏱ 15 min</span>
+              </div>
+            </div>
+            <div class="article-card__body">
+              <p class="article-card__tag">Groundnut Oil</p>
+              <h3 class="article-card__title">South Indian Groundnut Chutney — Tarka Done Right</h3>
+              <p class="article-card__excerpt">The authentic tarka for groundnut chutney requires oil with the right smoke point and a flavour that doesn't overpower. Cold-pressed groundnut oil is the answer.</p>
+              <div class="article-card__footer">
+                <a href="#" class="article-card__link">Read Recipe <span aria-hidden="true">→</span></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Wellness: Abhyanga -->
+          <article class="article-card reveal" data-tag="wellness sesame">
+            <div class="article-card__image">
+              <div style="width:100%;height:100%;background:linear-gradient(135deg,#FFF8E1,#FFECB3);display:flex;align-items:center;justify-content:center;font-size:4rem" aria-hidden="true">💆</div>
+              <div class="article-card__meta">
+                <span class="badge badge--gold">Wellness</span>
+                <span class="badge badge--green">📖 8 min</span>
+              </div>
+            </div>
+            <div class="article-card__body">
+              <p class="article-card__tag">Sesame Oil</p>
+              <h3 class="article-card__title">Abhyanga Self-Massage: The Ayurvedic Daily Ritual That Needs Pure Oil</h3>
+              <p class="article-card__excerpt">Why the Vata-pacifying benefits of Abhyanga depend entirely on using unrefined sesame oil — and how to do it correctly for maximum effect.</p>
+              <div class="article-card__footer">
+                <a href="#" class="article-card__link">Read Article <span aria-hidden="true">→</span></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Recipe: Mustard Fish Curry -->
+          <article class="article-card reveal reveal-delay-1" data-tag="recipe mustard">
+            <script type="application/ld+json">
+            {
+              "@context": "https://schema.org",
+              "@type": "Recipe",
+              "name": "Bengali Mustard Fish Curry (Shorshe Ilish)",
+              "author": { "@type": "Organization", "name": "Bharat Oils" },
+              "cookTime": "PT30M"
+            }
+            </script>
+            <div class="article-card__image">
+              <div style="width:100%;height:100%;background:linear-gradient(135deg,#E3F2FD,#BBDEFB);display:flex;align-items:center;justify-content:center;font-size:4rem" aria-hidden="true">🐟</div>
+              <div class="article-card__meta">
+                <span class="badge badge--gold">Recipe</span>
+                <span class="badge badge--green">⏱ 30 min</span>
+              </div>
+            </div>
+            <div class="article-card__body">
+              <p class="article-card__tag">Mustard Oil</p>
+              <h3 class="article-card__title">Shorshe Ilish — Bengali Hilsa in Mustard Gravy</h3>
+              <p class="article-card__excerpt">The pinnacle of Bengali cooking requires pure kachi ghani mustard oil. We break down the technique and why the pungency must not be cooked out completely.</p>
+              <div class="article-card__footer">
+                <a href="#" class="article-card__link">Read Recipe <span aria-hidden="true">→</span></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Wellness: Argemone Awareness -->
+          <article class="article-card reveal reveal-delay-2" data-tag="wellness mustard">
+            <div class="article-card__image">
+              <div style="width:100%;height:100%;background:linear-gradient(135deg,#FCE4EC,#F8BBD0);display:flex;align-items:center;justify-content:center;font-size:4rem" aria-hidden="true">🔬</div>
+              <div class="article-card__meta">
+                <span class="badge badge--gold">Wellness</span>
+                <span class="badge badge--green">📖 5 min</span>
+              </div>
+            </div>
+            <div class="article-card__body">
+              <p class="article-card__tag">Mustard Oil</p>
+              <h3 class="article-card__title">Argemone Oil: The Silent Adulterant in Indian Mustard Oil</h3>
+              <p class="article-card__excerpt">What argemone oil is, why it enters the supply chain, the symptoms of epidemic dropsy, and how to test your mustard oil at home in under 5 minutes.</p>
+              <div class="article-card__footer">
+                <a href="#" class="article-card__link">Read Article <span aria-hidden="true">→</span></a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- RITUAL & PUJA CLUSTER (Pillar 3 SEO — Deepam) -->
+    <section class="ritual-cluster" aria-labelledby="ritual-heading">
+      <div class="container">
+        <p class="section-label">Ritual &amp; Puja</p>
+        <h2 id="ritual-heading">The Sacred Knowledge of Lamp Oils</h2>
+        <p style="max-width:600px">
+          A dedicated cluster of articles exploring the cultural, spiritual, and scientific dimensions of pure oil use in Hindu ritual practice — content you will not find anywhere else.
+        </p>
+
+        <div class="ritual-grid">
+          <article class="ritual-article">
+            <div class="ritual-article__icon" aria-hidden="true">🪔</div>
+            <h3>Why the Purity of Lamp Oil Matters in Your Puja Room</h3>
+            <p>Paraffin-based lamps release benzene and toluene in enclosed spaces. Ancient texts specified pure plant oils for a reason — modern toxicology explains why.</p>
+            <a href="#" class="article-card__link">Read Article <span aria-hidden="true">→</span></a>
+          </article>
+
+          <article class="ritual-article">
+            <div class="ritual-article__icon" aria-hidden="true">🔥</div>
+            <h3>Sattvic Oils for Daily Puja — What the Classical Texts Specify</h3>
+            <p>The Grihyasutras, Dharmashastra, and Agama texts are specific about oil quality for the deepam. A comprehensive textual and practical guide.</p>
+            <a href="#" class="article-card__link">Read Article <span aria-hidden="true">→</span></a>
+          </article>
+
+          <article class="ritual-article">
+            <div class="ritual-article__icon" aria-hidden="true">🏺</div>
+            <h3>Karthigai Deepam: Lighting a Thousand Lamps the Pure Way</h3>
+            <p>For the festival of lights, volume matters. We guide you through the quantities, wick types, and oil grades needed for an Akhanda Deepam that burns clean all night.</p>
+            <a href="#" class="article-card__link">Read Article <span aria-hidden="true">→</span></a>
+          </article>
+
+          <article class="ritual-article">
+            <div class="ritual-article__icon" aria-hidden="true">🌅</div>
+            <h3>Best Oil for Lighting Brass Lamps: A Practical Guide</h3>
+            <p>Brass, bronze, silver, copper, and clay — each lamp material interacts differently with oil. Which pure oil works best for each, and why paraffin discolours brass permanently.</p>
+            <a href="#" class="article-card__link">Read Article <span aria-hidden="true">→</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="buy-strip" aria-labelledby="buy-heading">
+      <div class="container">
+        <h2 class="buy-strip__title" id="buy-heading">Cook with the Oils Behind These Recipes</h2>
+        <p class="buy-strip__sub">Order online or find a distributor near you.</p>
+        <div class="buy-channels">
+          <a href="#" class="buy-channel buy-channel--amazon" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">📦</span> Amazon</a>
+          <a href="#" class="buy-channel buy-channel--flipkart" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">🛒</span> Flipkart</a>
+          <a href="https://wa.me/971552262980" class="buy-channel buy-channel--whatsapp" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">💬</span> WhatsApp</a>
+          <a href="contact.html" class="buy-channel buy-channel--store"><span aria-hidden="true">📍</span> Find a Store</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div class="footer-brand"><a href="index.html" class="footer-brand__logo" aria-label="Bharat Oils Home"><img src="Bharat - brand logo .png" alt="Bharat Oils" class="footer-logo__img"></a><p class="footer-brand__desc">100% pure cold-pressed oils — zero chemicals, zero compromise.</p><div class="footer-certifications"><span class="footer-cert">FSSAI Compliant</span><span class="footer-cert">Zero Additives</span><span class="footer-cert">Cold-Pressed</span></div></div>
+        <nav aria-label="Oils"><p class="footer-col__title">Our Oils</p><ul class="footer-col__links" role="list"><li><a href="products/mustard-oil.html">Mustard Oil</a></li><li><a href="products/groundnut-oil.html">Groundnut Oil</a></li><li><a href="products/sesame-oil.html">Sesame Oil</a></li><li><a href="products/deepam-oil.html">Deepam Oil</a></li></ul></nav>
+        <nav aria-label="Company"><p class="footer-col__title">Company</p><ul class="footer-col__links" role="list"><li><a href="brand-story.html">Our Story</a></li><li><a href="culinary-wellness.html">Recipes</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+        <div><p class="footer-col__title">Connect</p><div class="footer-social"><a href="https://www.instagram.com/bharat.foods/" class="footer-social__link" aria-label="Instagram">Ig</a><a href="https://www.facebook.com/share/14dEM75TUSv/?mibextid=wwXIfr" class="footer-social__link" aria-label="Facebook">Fb</a></div><a href="https://wa.me/971552262980" class="footer-whatsapp" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">💬</span> WhatsApp Us</a></div>
+      </div>
+      <div class="site-footer__bottom"><p class="footer-copyright">© 2025 Bharat Oils. All rights reserved.</p><nav class="footer-legal"><a href="#">Privacy Policy</a><a href="#">Terms</a></nav></div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Filter bar interaction
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,410 @@
+/* ===================================================
+   BHARAT OILS — Product Detail Page Styles
+   =================================================== */
+
+/* --- Product Hero --- */
+
+.product-hero {
+  padding-top: var(--nav-height);
+  background: linear-gradient(160deg, var(--color-navy-light) 0%, var(--color-cream) 60%);
+  overflow: hidden;
+  position: relative;
+}
+
+.product-hero::before {
+  content: '';
+  position: absolute;
+  right: -100px;
+  top: -100px;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(201,168,76,0.12) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.product-hero__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-16);
+  align-items: center;
+  padding-block: var(--space-20);
+}
+
+@media (max-width: 900px) {
+  .product-hero__inner { grid-template-columns: 1fr; }
+}
+
+.product-hero__visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  background: var(--color-white);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-md);
+  font-size: 8rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.product-hero__visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: var(--space-8);
+}
+
+.product-hero__badges {
+  display: flex;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+  margin-bottom: var(--space-5);
+}
+
+.product-hero__content h1 {
+  margin-bottom: var(--space-5);
+}
+
+.product-hero__intro {
+  font-size: var(--text-lg);
+  color: var(--color-body);
+  line-height: 1.75;
+  margin-bottom: var(--space-8);
+}
+
+.product-hero__stats {
+  display: flex;
+  gap: var(--space-8);
+  margin-bottom: var(--space-8);
+  padding: var(--space-6);
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.product-stat {
+  text-align: center;
+  flex: 1;
+}
+
+.product-stat__value {
+  font-family: var(--font-display);
+  font-size: var(--text-3xl);
+  color: var(--color-saffron);
+  font-weight: 700;
+  line-height: 1;
+}
+
+.product-stat__label {
+  font-size: var(--text-xs);
+  color: var(--color-muted);
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-top: var(--space-1);
+}
+
+.product-hero__cta {
+  display: flex;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+/* --- Content Sections --- */
+
+.product-section {
+  padding-block: var(--space-20);
+  border-bottom: 1px solid var(--color-divider);
+}
+
+.product-section:last-child { border-bottom: none; }
+
+.product-section--alt {
+  background: var(--color-cream);
+}
+
+.product-section__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-16);
+  align-items: start;
+}
+
+@media (max-width: 768px) {
+  .product-section__inner { grid-template-columns: 1fr; }
+}
+
+.product-section__text h2 {
+  margin-bottom: var(--space-5);
+}
+
+.product-section__text p {
+  margin-bottom: var(--space-4);
+}
+
+.product-section__text p:last-child { margin-bottom: 0; }
+
+/* Chemistry callout box */
+.purity-callout {
+  background: var(--color-gold-faint);
+  border: 1px solid var(--color-gold-light);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+}
+
+.purity-callout__title {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  color: var(--color-green-deep);
+  margin-bottom: var(--space-4);
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.purity-callout__item {
+  display: flex;
+  gap: var(--space-3);
+  align-items: flex-start;
+  padding-block: var(--space-3);
+  border-bottom: 1px solid rgba(201,168,76,0.2);
+  font-size: var(--text-sm);
+}
+
+.purity-callout__item:last-child { border-bottom: none; }
+
+.purity-callout__item-icon { flex-shrink: 0; font-size: 1.1rem; }
+
+/* Nutrition panel */
+.nutrition-panel {
+  background: var(--color-white);
+  border: 2px solid var(--color-charcoal);
+  border-radius: var(--radius-md);
+  padding: var(--space-6);
+  font-family: var(--font-body);
+}
+
+.nutrition-panel__title {
+  font-size: var(--text-2xl);
+  font-weight: 800;
+  border-bottom: 10px solid var(--color-charcoal);
+  padding-bottom: var(--space-2);
+  margin-bottom: var(--space-2);
+  font-family: var(--font-body);
+  color: var(--color-charcoal);
+}
+
+.nutrition-panel__serving {
+  font-size: var(--text-sm);
+  color: var(--color-muted);
+  border-bottom: 4px solid var(--color-charcoal);
+  padding-bottom: var(--space-2);
+  margin-bottom: var(--space-3);
+}
+
+.nutrition-row {
+  display: flex;
+  justify-content: space-between;
+  padding-block: var(--space-2);
+  border-bottom: 1px solid var(--color-divider);
+  font-size: var(--text-sm);
+}
+
+.nutrition-row--bold { font-weight: 700; }
+.nutrition-row--sub  { padding-left: var(--space-5); color: var(--color-muted); }
+
+/* --- Deepam Hero Dark Theme --- */
+
+.product-hero--deepam {
+  background: linear-gradient(160deg, #0A0A1A 0%, var(--color-navy) 100%);
+}
+
+.product-hero--deepam .product-hero__content h1,
+.product-hero--deepam .product-hero__intro,
+.product-hero--deepam .product-hero__stats {
+  color: var(--color-white);
+}
+
+.product-hero--deepam .product-stat__value {
+  color: var(--color-gold);
+}
+
+.product-hero--deepam .product-stat__label {
+  color: rgba(255,255,255,0.6);
+}
+
+.product-hero--deepam .size-picker__label {
+  color: rgba(255,255,255,0.7);
+}
+
+.product-hero--deepam .size-option {
+  border-color: rgba(255,255,255,0.25);
+  color: rgba(255,255,255,0.8);
+  background: rgba(255,255,255,0.05);
+}
+
+.product-hero--deepam .size-option--active {
+  background: var(--color-gold);
+  border-color: var(--color-gold);
+  color: var(--color-charcoal);
+}
+
+.product-hero__visual--deepam {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: var(--radius-xl);
+}
+
+.deepam-visual {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-16);
+}
+
+.deepam-flame {
+  font-size: 6rem;
+  animation: flicker 3s ease-in-out infinite;
+  margin-bottom: var(--space-6);
+}
+
+@keyframes flicker {
+  0%, 100% { transform: scale(1) rotate(-1deg); opacity: 1; }
+  50%       { transform: scale(1.05) rotate(1deg); opacity: 0.9; }
+}
+
+.deepam-visual__label {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  color: var(--color-gold);
+  letter-spacing: 0.15em;
+}
+
+.deepam-visual__sub {
+  font-size: var(--text-sm);
+  color: rgba(255,255,255,0.5);
+  letter-spacing: 0.12em;
+  margin-top: var(--space-2);
+}
+
+/* --- Product Image Gallery --- */
+
+.product-hero__visual {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.product-hero__visual img#main-product-img {
+  width: 100%;
+  max-height: 420px;
+  object-fit: contain;
+  border-radius: var(--radius-xl);
+  background: var(--color-white);
+  box-shadow: var(--shadow-md);
+  padding: var(--space-6);
+}
+
+.product-gallery-thumbs {
+  display: flex;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.thumb-btn {
+  width: 60px;
+  height: 60px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 2px solid var(--color-divider);
+  cursor: pointer;
+  background: var(--color-white);
+  padding: 2px;
+  transition: border-color var(--transition-fast);
+}
+
+.thumb-btn img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.thumb-btn:hover,
+.thumb-btn--active {
+  border-color: var(--color-saffron);
+}
+
+/* --- Size Picker --- */
+
+.size-picker {
+  margin-bottom: var(--space-6);
+}
+
+.size-picker__label {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-muted);
+  margin-bottom: var(--space-3);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.size-picker__options {
+  display: flex;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+}
+
+.size-option {
+  padding: var(--space-2) var(--space-5);
+  border: 2px solid var(--color-divider);
+  border-radius: var(--radius-pill);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-body);
+  background: var(--color-white);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.size-option:hover {
+  border-color: var(--color-saffron);
+  color: var(--color-saffron);
+}
+
+.size-option--active {
+  background: var(--color-saffron);
+  border-color: var(--color-saffron);
+  color: var(--color-white);
+}
+
+/* --- Product Delivery Note --- */
+
+.product-delivery-note {
+  font-size: var(--text-xs);
+  color: var(--color-muted);
+  margin-top: var(--space-3);
+}
+
+/* --- Coming-soon CTA buttons --- */
+
+.btn--coming-soon {
+  opacity: 0.55;
+  cursor: default;
+  pointer-events: none;
+}
+
+/* --- Related Oils Strip --- */
+
+.related-oils {
+  background: var(--color-cream-dark);
+  padding-block: var(--space-16);
+}
+
+.related-oils h2 {
+  margin-bottom: var(--space-10);
+}
