@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-labelledby="t-coconut">
+<title id="t-coconut">Whole coconut split open</title>
+<circle cx="100" cy="105" r="68" fill="#6B3A20"/>
+<circle cx="100" cy="105" r="58" fill="#C17F3B"/>
+<circle cx="100" cy="105" r="44" fill="#FAF8F2"/>
+<g stroke="#6B3A20" stroke-width="2" opacity="0.55" fill="none">
+<path d="M60 60 q40 90 80 100"/>
+<path d="M40 90 q60 60 120 30"/>
+<path d="M50 130 q50 30 100 -10"/>
+<path d="M65 160 q40 -10 70 -20"/>
+</g>
+<circle cx="86" cy="92" r="4" fill="#6B3A20"/>
+<circle cx="114" cy="92" r="4" fill="#6B3A20"/>
+<circle cx="100" cy="118" r="4" fill="#6B3A20"/>
+<path d="M88 50 q-12 -22 8 -32 q4 14 -8 32" fill="#3A8B4A"/>
+<path d="M108 50 q12 -22 -8 -32 q-4 14 8 32" fill="#3A8B4A"/>
+</svg>

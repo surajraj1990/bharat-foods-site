@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-labelledby="t-paisley">
+<title id="t-paisley">Paisley pattern motif</title>
+<g transform="translate(100 100)">
+<path d="M-30 -50 q-40 30 -10 80 q40 35 70 -10 q-10 -60 -60 -70 z" fill="#C9A200" stroke="#1B3A8F" stroke-width="2"/>
+<path d="M-20 -40 q-30 25 -8 65 q30 25 55 -8 q-8 -48 -47 -57 z" fill="#E8701E" opacity="0.85"/>
+<path d="M-12 -30 q-22 19 -6 50 q22 18 40 -6 q-6 -36 -34 -44 z" fill="#F5E6A0"/>
+<circle cx="-4" cy="-12" r="3" fill="#1B3A8F"/>
+<circle cx="6" cy="2" r="3" fill="#1B3A8F"/>
+<circle cx="16" cy="16" r="3" fill="#1B3A8F"/>
+<circle cx="22" cy="32" r="3" fill="#1B3A8F"/>
+</g>
+</svg>

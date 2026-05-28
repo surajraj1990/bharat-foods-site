@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-labelledby="t-halal">
+<title id="t-halal">Halal certified seal</title>
+<circle cx="100" cy="100" r="92" fill="#1A7A2A"/>
+<circle cx="100" cy="100" r="76" fill="#FAF8F2" stroke="#1A7A2A" stroke-width="3"/>
+<text x="100" y="96" font-family="Georgia,serif" font-weight="800" font-size="40" text-anchor="middle" fill="#1A7A2A">حلال</text>
+<text x="100" y="126" font-family="Inter,sans-serif" font-weight="700" font-size="14" text-anchor="middle" fill="#1A7A2A" letter-spacing="2">HALAL</text>
+<text x="100" y="142" font-family="Inter,sans-serif" font-weight="500" font-size="9" text-anchor="middle" fill="#1A7A2A" letter-spacing="1.5">CERTIFIED</text>
+<g stroke="#1A7A2A" stroke-width="1.5" fill="none" opacity="0.5">
+<circle cx="100" cy="100" r="86"/>
+</g>
+<g fill="#C9A200">
+<circle cx="20" cy="100" r="3"/><circle cx="180" cy="100" r="3"/>
+<circle cx="100" cy="20" r="3"/><circle cx="100" cy="180" r="3"/>
+</g>
+</svg>

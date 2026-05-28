@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-labelledby="t-groundnut">
+<title id="t-groundnut">Groundnut shells and kernels</title>
+<g transform="translate(100 100)">
+<path d="M-46 -8 q-10 -34 18 -34 q24 0 18 22 q24 -4 24 22 q0 24 -22 22 q4 26 -20 28 q-22 0 -18 -22 q-24 -2 -22 -22 q0 -16 22 -16 z" fill="#C17F3B" stroke="#6B3A20" stroke-width="2.5" transform="rotate(-18)"/>
+</g>
+<g stroke="#6B3A20" stroke-width="1.2" fill="none" opacity="0.65">
+<path d="M60 86 q14 -4 28 0"/><path d="M62 100 q16 -4 30 0"/>
+<path d="M64 116 q16 -4 30 0"/><path d="M114 80 q14 -4 26 0"/>
+<path d="M116 96 q14 -4 26 0"/><path d="M114 116 q16 -4 28 0"/>
+</g>
+<circle cx="82" cy="90" r="9" fill="#F5E6A0"/>
+<circle cx="118" cy="90" r="9" fill="#F5E6A0"/>
+<circle cx="82" cy="118" r="9" fill="#F5E6A0"/>
+<circle cx="118" cy="118" r="9" fill="#F5E6A0"/>
+</svg>

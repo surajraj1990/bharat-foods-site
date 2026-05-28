@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-labelledby="t-oil-bottle">
+<title id="t-oil-bottle">Glass bottle of cold-pressed cooking oil</title>
+<defs>
+<linearGradient id="oilFill" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0" stop-color="#F5E6A0"/>
+<stop offset="1" stop-color="#D4A017"/>
+</linearGradient>
+</defs>
+<rect x="86" y="20" width="28" height="22" rx="3" fill="#1B3A8F"/>
+<path d="M86 42 q-2 8 -10 18 q-22 28 -22 58 v50 q0 8 8 8 h76 q8 0 8 -8 v-50 q0 -30 -22 -58 q-8 -10 -10 -18 z" fill="url(#oilFill)" stroke="#1B3A8F" stroke-width="3"/>
+<rect x="64" y="110" width="72" height="34" rx="3" fill="#FAF8F2" opacity="0.95"/>
+<text x="100" y="125" font-family="Georgia,serif" font-size="11" font-weight="700" text-anchor="middle" fill="#1B3A8F">BHARAT</text>
+<text x="100" y="138" font-family="Inter,sans-serif" font-size="6" text-anchor="middle" fill="#E8701E" letter-spacing="1">COLD-PRESSED</text>
+<ellipse cx="76" cy="80" rx="6" ry="14" fill="#FAF8F2" opacity="0.55"/>
+</svg>

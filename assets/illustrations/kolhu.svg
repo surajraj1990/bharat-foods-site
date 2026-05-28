@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300" role="img" aria-labelledby="t-kolhu">
+<title id="t-kolhu">Traditional kolhu wooden oil press</title>
+<ellipse cx="150" cy="232" rx="120" ry="20" fill="#6B3A20" opacity="0.25"/>
+<rect x="50" y="200" width="200" height="36" rx="6" fill="#6B3A20"/>
+<rect x="120" y="118" width="60" height="92" rx="6" fill="#C17F3B" stroke="#6B3A20" stroke-width="3"/>
+<rect x="146" y="40" width="8" height="80" fill="#6B3A20"/>
+<rect x="60" y="36" width="180" height="10" rx="4" fill="#6B3A20"/>
+<circle cx="60" cy="40" r="14" fill="#C17F3B"/>
+<circle cx="240" cy="40" r="14" fill="#C17F3B"/>
+<g fill="#C9A200" opacity="0.85">
+<rect x="138" y="195" width="24" height="14" rx="3"/>
+<ellipse cx="150" cy="216" rx="5" ry="8"/>
+<ellipse cx="138" cy="232" rx="3" ry="6"/>
+<ellipse cx="162" cy="232" rx="3" ry="6"/>
+</g>
+<text x="150" y="270" font-family="Georgia,serif" font-size="13" font-weight="600" text-anchor="middle" fill="#1B3A8F">TRADITIONAL KOLHU</text>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-labelledby="t-quality">
+<title id="t-quality">Premium quality seal</title>
+<g transform="translate(100 100)">
+<polygon points="0,-92 14,-72 38,-68 22,-50 28,-30 0,-40 -28,-30 -22,-50 -38,-68 -14,-72" fill="#C9A200" opacity="0.4"/>
+<g fill="#1B3A8F">
+<polygon points="-92,0 -72,-14 -68,-38 -50,-22 -30,-28 -40,0 -30,28 -50,22 -68,38 -72,14"/>
+</g>
+<g fill="#1B3A8F">
+<polygon points="92,0 72,-14 68,-38 50,-22 30,-28 40,0 30,28 50,22 68,38 72,14"/>
+</g>
+<g fill="#1B3A8F">
+<polygon points="0,92 14,72 38,68 22,50 28,30 0,40 -28,30 -22,50 -38,68 -14,72"/>
+</g>
+<g fill="#1B3A8F">
+<polygon points="0,-92 14,-72 38,-68 22,-50 28,-30 0,-40 -28,-30 -22,-50 -38,-68 -14,-72"/>
+</g>
+<circle r="60" fill="#FAF8F2" stroke="#1B3A8F" stroke-width="3"/>
+<text y="-6" font-family="Georgia,serif" font-weight="800" font-size="22" text-anchor="middle" fill="#1B3A8F">PREMIUM</text>
+<text y="18" font-family="Inter,sans-serif" font-weight="600" font-size="12" text-anchor="middle" fill="#E8701E" letter-spacing="2">QUALITY</text>
+<text y="38" font-family="Inter,sans-serif" font-weight="400" font-size="8" text-anchor="middle" fill="#1B3A8F" letter-spacing="1.5">SINCE 1965</text>
+</g>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400" role="img" aria-labelledby="t-matka">
+<title id="t-matka">Clay matka storage pot — section divider</title>
+<line x1="40" y1="310" x2="280" y2="310" stroke="#C9A200" stroke-width="1.5" opacity="0.6"/>
+<line x1="520" y1="310" x2="760" y2="310" stroke="#C9A200" stroke-width="1.5" opacity="0.6"/>
+<g transform="translate(400 200)">
+<path d="M-70 -90 q-60 60 -50 110 q15 60 120 60 q105 0 120 -60 q10 -50 -50 -110 q-30 -8 -70 -8 q-40 0 -70 8 z" fill="#B5451B" stroke="#6B3A20" stroke-width="3"/>
+<ellipse cx="0" cy="-90" rx="32" ry="10" fill="#6B3A20"/>
+<ellipse cx="0" cy="-90" rx="28" ry="7" fill="#1A1A1A"/>
+<path d="M-118 30 q120 30 236 0" stroke="#6B3A20" stroke-width="2" fill="none" opacity="0.55"/>
+<path d="M-110 60 q120 25 220 0" stroke="#6B3A20" stroke-width="2" fill="none" opacity="0.55"/>
+<g fill="#FAF8F2" opacity="0.45">
+<ellipse cx="-50" cy="-30" rx="8" ry="22"/>
+</g>
+</g>
+<circle cx="160" cy="310" r="3" fill="#C9A200"/>
+<circle cx="640" cy="310" r="3" fill="#C9A200"/>
+</svg>
